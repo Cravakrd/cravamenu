@@ -806,7 +806,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     <div class="footer-col">
       <h5>لەگەڵمان بین</h5>
       <div class="social-row">
-        <a href="#" class="social-icon" aria-label="ئینستاگرام">
+        <a href="https://www.instagram.com/crava.krd?igsh=MWlodnU3aW9oa3Q5ag%3D%3D&utm_source=qr" class="social-icon" aria-label="ئینستاگرام">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
         </a>
         <a href="#" class="social-icon" aria-label="فەیسبووک">
@@ -817,6 +817,11 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
         </a>
         <a href="#" class="social-icon" aria-label="واتساپ">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21a9 9 0 1 0-7.8-4.5L3 21l4.6-1.2A9 9 0 0 0 12 21z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 9.5c0 4 3 6.5 6.5 6.5.6 0 1.5-.2 1.5-1v-1.3l-2-1-1 1c-1-.4-2.2-1.6-2.7-2.7l1-1-1-2H9c-.4 0-.5.7-.5 1.5z" fill="currentColor"/></svg>
+              <!-- Snapchat -->
+<a href="https://www.instagram.com/crava.krd?igsh=MWlodnU3aW9oa3Q5ag%3D%3D&utm_source=qr" target="_blank" class="social-icon" aria-label="سنەپچات">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2c-2.5 0-4.5 2-4.5 4.5v2c0 .5-.3 1-.8 1.2l-1 .5c-.3.2-.4.6-.2.9.4.5 1 .8 1.6.9.4.1.7.5.6.9-.3 1.4-1.3 2.5-2.6 2.9-.2.1-.3.3-.2.5.3.5 1 .8 1.7.8.7 0 1.3.4 1.6 1 .4.8 1.2 1.3 2.1 1.3h3.4c.9 0 1.7-.5 2.1-1.3.3-.6.9-1 1.6-1 .7 0 1.4-.3 1.7-.8.1-.2 0-.4-.2-.5-1.3-.4-2.3-1.5-2.6-2.9-.1-.4.2-.8.6-.9.6-.1 1.2-.4 1.6-.9.2-.3.1-.7-.2-.9l-1-.5c-.5-.2-.8-.7-.8-1.2v-2C16.5 4 14.5 2 12 2z"/>
+  </svg>
         </a>
       </div>
     </div>
