@@ -401,7 +401,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   from{ transform:translateX(0); }
   to{ transform:translateX(-50%); }
 }
-[dir="rtl"] .marquee-track{ animation-direction:reverse; }
+[dir="rtl"] .marquee-track{ animation-direction:; }
 
 /* ==========================================================================
    Footer
