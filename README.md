@@ -488,16 +488,20 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .icecrava-text p{ max-width:none; }
   .icecrava-icon{ width:130px; height:130px; }
 }
+ {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 .hero {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    width: 100% !important;
-  }
-  .hero-inner {
-    width: 100% !important;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-  }
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
 
 @media (max-width: 420px){
   .hero-title{ font-size:30px; }
