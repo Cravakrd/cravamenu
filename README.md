@@ -393,7 +393,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .{ width:100%; overflow:hidden; }
 .marquee-track{
   display:flex; gap:14px; white-space:nowrap; width:max-content;
-  animation: marquee 3s linear infinite;
+  animation: marquee 4s linear infinite;
   font-family:var(--font-display); font-weight:800; font-size:15px; color:var(--ink);
 }
 .marquee-track span{ padding:0 6px; }
@@ -401,9 +401,9 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   from{ transform:translateX(0); }
   to{ transform:translateX(-50%); }
 }
-[dir="rtl"] .marquee-track{ animation-direction:; }
+[dir="rtl"] .marquee-track{ animation-direction:; reverse; }
 
-/* ==========================================================================
+/* =======================================================================
    Footer
    ========================================================================== */
 .site-footer{ background:var(--forest-dark); color:#D9DED4; padding-top:70px; }
