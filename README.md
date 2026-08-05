@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>کڕاڤە | تامی تازە بۆ بردنەوە</title>
+<title>CRAVA </title>
 <meta name="description" content="کڕاڤە - شیرەی میوەی تازە و پەتاتەی گەرم، تەنها بۆ بردنەوە لە شەقامی کاوا">
 
 <!-- Fonts: Noto Kufi Arabic for display headings, Vazirmatn for body text — both have full Kurdish/Sorani glyph support -->
@@ -559,10 +559,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   <div class="hero-inner">
     <img src="crlogo.jpg" alt="کڕاڤە" class="hero-logo reveal-scale">
 
-    <p class="eyebrow reveal-up delay-1">تەنها بۆ بردنەوە · شەقامی کاوا</p>
+    <p class="eyebrow reveal-up delay-1"></p>
     <h1 class="hero-title reveal-up delay-2">
-      تامی تازە دەتەوێت؟ <br>
-      <span class="accent-text">کڕاڤە بیهێنایە</span>
+    بەخێربێن <br>
+      <span class="accent-text"> بۆ کڕاڤا </span>
     </h1>
     <p class="hero-sub reveal-up delay-3">
       شیرەی میوەی ڕەسەن و پەتاتەی گەرمی ترسکە، هەر کاتێک ئارەزووی تامێکی تازەت هەبوو.
