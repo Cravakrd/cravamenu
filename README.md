@@ -773,12 +773,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 <section class="takeaway-strip">
   <div class="marquee">
     <div class="marquee-track">
-      <span>تەنها بۆ بردنەوە</span><span>•</span>
-      <span>هیچ شوێنی دانیشتن نییە</span><span>•</span>
-      <span>شەقامی کاوا</span><span>•</span>
-      <span>تەنها بۆ بردنەوە</span><span>•</span>
-      <span>هیچ شوێنی دانیشتن نییە</span><span>•</span>
-      <span>شەقامی کاوا</span><span>•</span>
+      <span>کراڤا</span><span>•</span>
+      <span>شەربەتی میوەی فريش</span><span>•</span>
+      <span>پەتاتەی گەرمی تازە</span><span>•</span>
+  
     </div>
   </div>
 </section>
@@ -832,7 +830,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
 
   <div class="footer-bottom">
-    <p>© ٢٠٢٦ کڕاڤە. هەموو مافێک پارێزراوە.</p>
+    <p>© ٢٠٢٦ کڕاڤە.   </p>
   </div>
 </footer>
 
