@@ -793,19 +793,19 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
     <div class="footer-col">
       <h5>شوێنمان</h5>
-      <p class="address">📍 شەقامی کاوا</p>
-      <p class="takeaway-note">🛍️ تەنها بۆ بردنەوە — هیچ شوێنی دانیشتن نییە</p>
+      <p class="address"></p>
+      <p class="takeaway-note"> شەقامی کاوە(حریق)بەرامبەر LC Waikiki </p>
     </div>
 
     <div class="footer-col">
       <h5>کاتژمێرەکانی کار</h5>
       <p>هەموو ڕۆژێک</p>
-      <p>١٢:٠٠ی نیوەڕۆ — ١٢:٠٠ی شەو</p>
+      <p>12:00AM TO 4:00PM</p>
     </div>
 
  
     <div class="footer-col">
-      <h5>لەگەڵمان بین</h5>
+      <h5>لەگەڵمان بن</h5>
       <div class="social-row">
         <a href="https://www.instagram.com/crava.krd?igsh=MWlodnU3aW9oa3Q5ag%3D%3D&utm_source=qr" class="social-icon" aria-label="ئینستاگرام">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
