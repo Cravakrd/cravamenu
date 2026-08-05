@@ -528,8 +528,8 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     </a>
 
     <nav class="main-nav" id="mainNav">
-      <a href="#juices">شیرەی میوە</a>
-      <a href="#icecrava">ئایسکریم</a>
+      <a href="#juices">شەربەتی میوە</a>
+      <a href="#icecrava">ئایسکراڤا</a>
       <a href="#fries">پەتاتە</a>
       <a href="#sauces">سۆسەکان</a>
       <a href="#footer">پەیوەندی</a>
