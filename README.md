@@ -384,13 +384,13 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .sauce-item .price{ color:var(--gold-light); font-size:13px; font-weight:700; }
 
 /* ==========================================================================
-   Takeaway marquee strip — signature motion moment
+   Takeaway  strip — signature motion moment
    ========================================================================== */
 .takeaway-strip{
   background: linear-gradient(90deg,var(--gold-deep),var(--gold));
   overflow:hidden; padding:14px 0;
 }
-.marquee{ width:100%; overflow:hidden; }
+.{ width:100%; overflow:hidden; }
 .marquee-track{
   display:flex; gap:14px; white-space:nowrap; width:max-content;
   animation: marquee 3s linear infinite;
@@ -774,6 +774,12 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   <div class="marquee">
     <div class="marquee-track">
       <span>کراڤا</span><span>•</span>
+      <span>شەربەتی میوەی فريش</span><span>•</span>
+      <span>پەتاتەی گەرمی تازە</span><span>•</span>
+       <span>کراڤا</span><span>•</span>
+      <span>شەربەتی میوەی فريش</span><span>•</span>
+      <span>پەتاتەی گەرمی تازە</span><span>•</span>
+       <span>کراڤا</span><span>•</span>
       <span>شەربەتی میوەی فريش</span><span>•</span>
       <span>پەتاتەی گەرمی تازە</span><span>•</span>
   
