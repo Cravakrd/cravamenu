@@ -148,7 +148,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   50%{ transform:translateY(-26px) rotate(8deg); }
 }
 
-.hero-inner{ position:relative; z-index:2; max-width:760px; }
+.hero-inner{ position:relative; z-index:2; max-width:100%; padding:0 16px; }
 .hero-logo{ height:76px; width:auto; margin:0 auto 28px; }
 
 .eyebrow{
@@ -488,6 +488,16 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .icecrava-text p{ max-width:none; }
   .icecrava-icon{ width:130px; height:130px; }
 }
+.hero {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+  .hero-inner {
+    width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
 
 @media (max-width: 420px){
   .hero-title{ font-size:30px; }
