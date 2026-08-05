@@ -798,9 +798,9 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     </div>
 
     <div class="footer-col">
-      <h5>کاتژمێرەکانی کار</h5>
-      <p>هەموو ڕۆژێک</p>
-      <p>12:00AM TO 4:00PM</p>
+      <h5>کراوەیە لە</h5>
+      <p></p>
+      <p>4:00 pm to 12:00 am</p>
     </div>
 
  
