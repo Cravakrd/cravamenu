@@ -798,7 +798,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     <div class="footer-col">
       <h5>کراوەیە لە</h5>
       <p></p>
-      <p>4:00 pm to 12:00 am</p>
+      <p>٤:٠٠ دوای نیوەڕۆ  تاوەکو  ١٢:٠٠ شەو</p>
     </div>
 
  
