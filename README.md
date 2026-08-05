@@ -524,7 +524,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   <div class="header-inner">
     <a href="#hero" class="brand">
       <img src="
-      crlogo.jpg" alt="کڕاڤە" class="brand-logo">
+      crrrlogo.jpg" alt="کڕاڤە" class="brand-logo">
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -557,7 +557,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   </div>
 
   <div class="hero-inner">
-    <img src="crlogo.jpg" alt="کڕاڤە" class="hero-logo reveal-scale">
+    <img src="crrrlogo.jpg" alt="کڕاڤە" class="hero-logo reveal-scale">
 
     <p class="eyebrow reveal-up delay-1"></p>
     <h1 class="hero-title reveal-up delay-2">
@@ -787,14 +787,14 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 <footer class="site-footer" id="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="images/crlogo.jpg" alt="کڕاڤە" class="footer-logo">
-      <p>تامی تازە، هەموو ڕۆژێک لە کاوا ستریت.</p>
+      <img src="crrrlogo.jpg" alt="کڕاڤە" class="footer-logo">
+      <p></p>
     </div>
 
     <div class="footer-col">
       <h5>شوێنمان</h5>
       <p class="address"></p>
-      <p class="takeaway-note"> شەقامی کاوە(حریق)بەرامبەر LC Waikiki </p>
+      <p class="takeaway-note"> شەقامی کاوە(حریق)-بەرامبەر LC Waikiki </p>
     </div>
 
     <div class="footer-col">
