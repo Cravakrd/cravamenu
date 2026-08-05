@@ -564,9 +564,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     بەخێربێن <br>
       <span class="accent-text"> بۆ کڕاڤا </span>
     </h1>
-    <p class="hero-sub reveal-up delay-3">
-      شیرەی میوەی ڕەسەن و پەتاتەی گەرمی ترسکە، هەر کاتێک ئارەزووی تامێکی تازەت هەبوو.
-      دروستکراو لە بەردەم چاوت، لە یەک خولەکدا ئامادەیە بۆ بردنەوە.
+    <p class="hero-sub reveal-up delay-3">شەربەتی میوەی فرێش و پەتاتەی گەرمی تازە بە جۆرەها تامی جیاواز لەگەڵ CRAVA تاقی بکەرەوە.
     </p>
 
     <div class="hero-actions reveal-up delay-4">
