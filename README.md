@@ -393,7 +393,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .marquee{ width:100%; overflow:hidden; }
 .marquee-track{
   display:flex; gap:14px; white-space:nowrap; width:max-content;
-  animation: marquee 22s linear infinite;
+  animation: marquee 3s linear infinite;
   font-family:var(--font-display); font-weight:800; font-size:15px; color:var(--ink);
 }
 .marquee-track span{ padding:0 6px; }
