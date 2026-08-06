@@ -230,7 +230,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .wave-into-dark{ margin-top:-2px; }
 
 .section-inner{ max-width:1240px; margin:0 auto; padding:90px 24px; }
-.section-head{ max-width:640px; margin-bottom:56px; }
+.section-head{ max-width:640px; margin-bottom:46px; }
 .section-head.light{ color:var(--white); }
 .kicker{
   color:var(--gold-light); font-weight:700; font-size:14px; letter-spacing:.3px; margin-bottom:10px;
@@ -240,18 +240,6 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .section-head.light .section-title{ color:var(--white); }
 .section-desc{ color:#C9D1C3; font-size:16px; }
 .section-head.light .section-desc{ color:#C9D1C3; }
-
-.subsection-title {
-  color: var(--gold-light);
-  font-size: 22px;
-  font-weight: 800;
-  margin: 40px 0 20px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid rgba(245, 166, 35, 0.3);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 /* Item photos */
 .item-photo{
@@ -270,29 +258,46 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
 /* Juices */
 .juices{ background:var(--forest-dark); position:relative; }
-.juice-card{ display:flex; flex-direction:column; }
 
-.juice-feature{
-  display:grid; grid-template-columns: .9fr 1.1fr; gap:48px; align-items:center;
-  background:var(--white); border-radius:var(--radius-lg); padding:36px;
-  box-shadow:0 30px 60px -30px rgba(27,77,46,.25); margin-bottom:64px;
+/* Category Tabs for Juices */
+.juice-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
-.juice-feature-img{ position:relative; border-radius:var(--radius-md); overflow:hidden; }
-.juice-feature-img img{
-  width:100%; height:100%; object-fit:cover; aspect-ratio:1/1;
-  transition: transform .6s var(--ease);
+.tab-btn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--white);
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all .3s var(--ease);
 }
-.juice-feature:hover .juice-feature-img img{ transform:scale(1.06) rotate(1deg); }
-.juice-feature-badge{
-  position:absolute; bottom:16px; inset-inline-start:16px;
-  background:rgba(16,22,15,.75); backdrop-filter:blur(6px);
-  color:var(--white); padding:10px 16px; border-radius:14px;
-  display:flex; flex-direction:column; line-height:1.2;
+.tab-btn:hover {
+  background: rgba(255,255,255,0.12);
 }
-.badge-num{ font-family:var(--font-display); font-weight:800; color:var(--gold-light); font-size:18px; }
-.badge-txt{ font-size:12px; color:#D9DED4; }
-.juice-feature-text h3{ font-size:26px; color:var(--forest); margin-bottom:14px; }
-.juice-feature-text p{ color:var(--text-muted); font-size:15.5px; }
+.tab-btn.active {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+  box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3);
+}
+
+.juice-category {
+  display: none;
+  animation: fadeIn .4s var(--ease);
+}
+.juice-category.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .juice-grid{
   display:grid; grid-template-columns:repeat(5,1fr); gap:18px;
@@ -300,6 +305,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .juice-card{
   background:var(--white); border-radius:var(--radius-md); padding:26px 18px;
   text-align:center; border:1px solid rgba(27,77,46,.08);
+  display:flex; flex-direction:column;
   transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
 }
 .juice-card:hover{
@@ -311,7 +317,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .juice-card h4{ font-size:15px; color:var(--text-dark); margin-bottom:10px; font-weight:700; min-height:40px; }
 .juice-card .price{
   display:inline-block; font-weight:700; color:var(--forest); font-size:14px;
-  background:var(--cream-2); padding:5px 14px; border-radius:999px;
+  background:var(--cream-2); padding:5px 14px; border-radius:999px; margin-top: auto;
 }
 .juice-card.featured{
   background: linear-gradient(160deg,var(--forest),var(--forest-dark)); color:var(--white);
@@ -435,7 +441,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .sauce-name{ color:var(--white); font-weight:600; font-size:14.5px; }
 .sauce-item .price{ color:var(--gold-light); font-size:13px; font-weight:700; }
 
-/* Takeaway strip — Seamless Infinite Motion */
+/* Takeaway strip */
 .takeaway-strip{
   background: linear-gradient(90deg,var(--gold-deep),var(--gold));
   overflow: hidden;
@@ -542,24 +548,23 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .main-nav a{ font-size:18px; }
   .menu-toggle{ display:flex; }
 
-  .juice-feature{ grid-template-columns:1fr; }
   .fries-layout{ grid-template-columns:1fr; }
   
-  /* گۆڕینی بەشی شەربەت بۆ ٤ ئایتم لەسەر مۆبایل */
+  /* گۆڕینی بەشی شەربەت بۆ ٣ ئایتم لەسەر مۆبایل */
   .juice-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px;
   }
   .juice-card {
-    padding: 12px 6px; 
+    padding: 16px 8px; 
   }
   .juice-card h4 {
-    font-size: 11px; 
-    min-height: 30px;
+    font-size: 13px; 
+    min-height: 38px;
   }
   .juice-card .price {
-    font-size: 11px;
-    padding: 3px 8px;
+    font-size: 12px;
+    padding: 4px 10px;
   }
 
   .sauce-list{ grid-template-columns:repeat(2,1fr); }
@@ -571,6 +576,33 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .icecrava-text p{ max-width:none; }
   .icecrava-icon{ width:130px; height:130px; }
 }
+
+@media (max-width: 420px){
+  .hero-title{ font-size:30px; }
+  .btn{ padding:14px 22px; font-size:14px; }
+  
+  /* ڕێکخستنی ٣ ئایتمەکە بۆ شاشە زۆر بچووکەکان */
+  .juice-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px;
+  }
+  .juice-card {
+    padding: 12px 6px;
+  }
+  .juice-card h4 {
+    font-size: 11px;
+    min-height: 34px;
+  }
+  .juice-card .price {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  .item-photo-fries{ width:52px; height:52px; }
+  .fries-card{ gap:12px; padding:14px 16px; }
+  .icecrava-icon{ width:110px; height:110px; }
+}
+
 html, body {
   margin: 0 !important;
   padding: 0 !important;
@@ -584,30 +616,6 @@ html, body {
   padding-left: 0 !important;
   padding-right: 0 !important;
   width: 100% !important;
-}
-
-@media (max-width: 420px){
-  .hero-title{ font-size:30px; }
-  .btn{ padding:14px 22px; font-size:14px; }
-  
-  /* ڕێکخستنی ٤ ئایتمەکە بۆ شاشە زۆر بچووکەکان */
-  .juice-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 6px;
-  }
-  .juice-card {
-    padding: 8px 4px;
-  }
-  .juice-card h4 {
-    font-size: 9px;
-  }
-  .juice-card .price {
-    font-size: 9px;
-  }
-
-  .item-photo-fries{ width:52px; height:52px; }
-  .fries-card{ gap:12px; padding:14px 16px; }
-  .icecrava-icon{ width:110px; height:110px; }
 }
 </style>
 </head>
@@ -721,55 +729,52 @@ html, body {
       <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
     </div>
 
-    <div class="juice-feature reveal-up">
-      <div class="juice-feature-img">
-        <img src="crglas.jpg" alt="شەربەتی میوەی تازەی کڕاڤە" loading="lazy">
-        <div class="juice-feature-badge">
-          <span class="badge-num">١٠٠٪</span>
-          <span class="badge-txt">میوەی سروشتی</span>
-        </div>
-      </div>
-      <div class="juice-feature-text">
-        <h3>لە میوە بۆ گیلاس، لەبەردەم چاوت</h3>
-        <p>هەموو شەربەتێک لە میوەی تازەی ئەو ڕۆژە دروست دەکرێت، بەبێ کۆنسێرڤ و بەبێ شەکری دەرەکی. تامی ڕاستەقینەی میوە، هەر کاتێک پێویستت پێی بوو.</p>
-      </div>
+    <!-- دوگمەکانی جیاکردنەوە (Tabs) -->
+    <div class="juice-tabs reveal-up">
+      <button class="tab-btn active" data-target="mix-juices">میکسی میوە</button>
+      <button class="tab-btn" data-target="pure-juices">شەربەتی میوە</button>
+      <button class="tab-btn" data-target="milkshakes">میلکشەیک</button>
     </div>
 
     <!-- Subsection 1: Mix Fruit Juices -->
-    <h3 class="subsection-title reveal-up">🍹 ١٠ جۆر میکسی میوە</h3>
-    <div class="juice-grid">
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>میکسی مانگۆ و پرتەقاڵ</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-05.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>میکسی سێو و کیوی</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-06.jpg" alt="میکسی ئەناناس و مانگۆ" loading="lazy"></div><h4>میکسی ئەناناس و مانگۆ</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-07.jpg" alt="میکسی هەنار و سێو" loading="lazy"></div><h4>میکسی هەنار و سێو</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-08.jpg" alt="میکسی بەتیخ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی بەتیخ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-09.jpg" alt="میکسی گوێز و مۆز" loading="lazy"></div><h4>میکسی گوێز و مۆز</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card featured"><div class="item-photo"><img src="images/juice/juice-15.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>تایبەتی کڕاڤە — میکسی گەرمسێری</h4><span class="price">٤٠٠٠ د.ع</span></article>
+    <div class="juice-category active" id="mix-juices">
+      <div class="juice-grid">
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>میکسی مانگۆ و پرتەقاڵ</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-05.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>میکسی سێو و کیوی</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-06.jpg" alt="میکسی ئەناناس و مانگۆ" loading="lazy"></div><h4>میکسی ئەناناس و مانگۆ</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-07.jpg" alt="میکسی هەنار و سێو" loading="lazy"></div><h4>میکسی هەنار و سێو</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-08.jpg" alt="میکسی بەتیخ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی بەتیخ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-09.jpg" alt="میکسی گوێز و مۆز" loading="lazy"></div><h4>میکسی گوێز و مۆز</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card featured"><div class="item-photo"><img src="images/juice/juice-15.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>تایبەتی کڕاڤە — میکسی گەرمسێری</h4><span class="price">٤٠٠٠ د.ع</span></article>
+      </div>
     </div>
 
     <!-- Subsection 2: Pure Fruit Juices -->
-    <h3 class="subsection-title reveal-up">🍊 ٥ جۆر شەربەتی میوە</h3>
-    <div class="juice-grid">
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-13.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-14.jpg" alt="شەربەتی بەتیخ" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
+    <div class="juice-category" id="pure-juices">
+      <div class="juice-grid">
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-13.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-14.jpg" alt="شەربەتی بەتیخ" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
+      </div>
     </div>
 
     <!-- Subsection 3: Milkshakes -->
-    <h3 class="subsection-title reveal-up">🥤 ٦ جۆر میلکشەیک</h3>
-    <div class="juice-grid">
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-01.jpg" alt="Banana Shake" loading="lazy"></div><h4>Banana Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-02.jpg" alt="Strawberry Shake" loading="lazy"></div><h4>Strawberry Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-03.jpg" alt="Mango Shake" loading="lazy"></div><h4>Mango Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-04.jpg" alt="Pineapple Shake" loading="lazy"></div><h4>Pineapple Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-05.jpg" alt="Mixed Berry Shake" loading="lazy"></div><h4>Mixed Berry Shake</h4><span class="price">٤٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-06.jpg" alt="Kiwi Shake" loading="lazy"></div><h4>Kiwi Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+    <div class="juice-category" id="milkshakes">
+      <div class="juice-grid">
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-01.jpg" alt="Banana Shake" loading="lazy"></div><h4>Banana Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-02.jpg" alt="Strawberry Shake" loading="lazy"></div><h4>Strawberry Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-03.jpg" alt="Mango Shake" loading="lazy"></div><h4>Mango Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-04.jpg" alt="Pineapple Shake" loading="lazy"></div><h4>Pineapple Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-05.jpg" alt="Mixed Berry Shake" loading="lazy"></div><h4>Mixed Berry Shake</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-06.jpg" alt="Kiwi Shake" loading="lazy"></div><h4>Kiwi Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      </div>
     </div>
+
   </div>
 </section>
 
@@ -1015,6 +1020,28 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
+    });
+  });
+
+  /* کۆدی زیادکراو بۆ دوگمەی تابەکانی شەربەت (Tab System) */
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const categories = document.querySelectorAll('.juice-category');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // سڕینەوەی کلاسی ئەکتیڤ لە هەموو دوگمە و بەشەکان
+      tabBtns.forEach(b => b.classList.remove('active'));
+      categories.forEach(c => c.classList.remove('active'));
+
+      // زیادکردنی کلاسی ئەکتیڤ بۆ دوگمە و بەشە دیاریکراوەکە
+      btn.classList.add('active');
+      const target = document.getElementById(btn.dataset.target);
+      target.classList.add('active');
+      
+      // بۆ ئەوەی ڕاستەوخۆ دەربکەون کاتێک تابەکە دەگۆڕدرێت
+      target.querySelectorAll('.juice-card').forEach(card => {
+        card.classList.add('in-view');
+      });
     });
   });
 
