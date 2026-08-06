@@ -544,7 +544,24 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
   .juice-feature{ grid-template-columns:1fr; }
   .fries-layout{ grid-template-columns:1fr; }
-  .juice-grid{ grid-template-columns:repeat(2,1fr); }
+  
+  /* گۆڕینی بەشی شەربەت بۆ ٤ ئایتم لەسەر مۆبایل */
+  .juice-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 10px;
+  }
+  .juice-card {
+    padding: 12px 6px; 
+  }
+  .juice-card h4 {
+    font-size: 11px; 
+    min-height: 30px;
+  }
+  .juice-card .price {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
   .sauce-list{ grid-template-columns:repeat(2,1fr); }
   .footer-inner{ grid-template-columns:1fr; text-align:center; }
   .social-row{ justify-content:center; }
@@ -572,7 +589,22 @@ html, body {
 @media (max-width: 420px){
   .hero-title{ font-size:30px; }
   .btn{ padding:14px 22px; font-size:14px; }
-  .juice-grid{ grid-template-columns:repeat(2,1fr); gap:12px; }
+  
+  /* ڕێکخستنی ٤ ئایتمەکە بۆ شاشە زۆر بچووکەکان */
+  .juice-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 6px;
+  }
+  .juice-card {
+    padding: 8px 4px;
+  }
+  .juice-card h4 {
+    font-size: 9px;
+  }
+  .juice-card .price {
+    font-size: 9px;
+  }
+
   .item-photo-fries{ width:52px; height:52px; }
   .fries-card{ gap:12px; padding:14px 16px; }
   .icecrava-icon{ width:110px; height:110px; }
