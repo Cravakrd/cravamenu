@@ -1,22 +1,15 @@
-
 <html lang="ckb" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CRAVA </title>
-<meta name="description" content="کڕاڤە - شیرەی میوەی تازە و پەتاتەی گەرم، تەنها بۆ بردنەوە لە شەقامی کاوا">
+<title>CRAVA</title>
+<meta name="description" content="کڕاڤە - شەربەتی میوەی تازە و پەتاتەی گەرم، تەنها بۆ بردنەوە لە شەقامی کاوا">
 
-<!-- Fonts: Noto Kufi Arabic for display headings, Vazirmatn for body text — both have full Kurdish/Sorani glyph support -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700;800;900&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* ==========================================================================
-   CRAVA — Design tokens
-   Palette pulled directly from the CRAVA logo: forest green + mango gold,
-   set against near-black (product-shot mood) and a warm cream (juice mood).
-   ========================================================================== */
 :root{
   --forest:        #1B4D2E;
   --forest-dark:   #0F2116;
@@ -42,9 +35,6 @@
   --ease: cubic-bezier(.22,1,.36,1);
 }
 
-/* ==========================================================================
-   Reset
-   ========================================================================== */
 *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
 html{ scroll-behavior:smooth; }
 body{
@@ -60,21 +50,17 @@ ul{ list-style:none; }
 button{ font-family:inherit; cursor:pointer; }
 h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
-/* respect reduced-motion users */
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
 }
 
-/* subtle film-grain texture layered over the whole page for depth */
 .grain{
   position:fixed; inset:0; pointer-events:none; z-index:9999;
   opacity:.035; mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* ==========================================================================
-   Header
-   ========================================================================== */
+/* Header */
 .site-header{
   position:fixed; inset-inline:0; top:0; z-index:1000;
   padding:18px 0;
@@ -114,15 +100,13 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .menu-toggle.open span:nth-child(2){ opacity:0; }
 .menu-toggle.open span:nth-child(3){ transform:translateY(-7.5px) rotate(-45deg); }
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
+/* Hero */
 .hero{
   position:relative; min-height:100svh;
-  display:flex; align-items:center; justify-content:center;
+  display:flex; flex-direction:column; justify-content:center;
   background: radial-gradient(ellipse at 50% -10%, #1c3324 0%, var(--ink) 55%, var(--ink) 100%);
   overflow:hidden;
-  padding: 140px 24px 100px;
+  padding: 140px 24px 60px;
   text-align:center;
 }
 .hero-glow{
@@ -148,7 +132,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   50%{ transform:translateY(-26px) rotate(8deg); }
 }
 
-.hero-inner{ position:relative; z-index:2; max-width:100%; padding:0 16px; }
+.hero-inner{ position:relative; z-index:2; max-width:100%; padding:0 16px; margin:auto 0; }
 .hero-logo{ height:76px; width:auto; margin:0 auto 28px; }
 
 .eyebrow{
@@ -164,7 +148,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .hero-sub{
   color:#D9DED4; font-size:17px; max-width:560px; margin:0 auto 36px;
 }
-.hero-actions{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+.hero-actions{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:40px; }
 
 .btn{
   display:inline-flex; align-items:center; gap:10px;
@@ -182,47 +166,94 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 }
 .btn-ghost:hover{ background:rgba(255,255,255,.1); transform:translateY(-3px); }
 
-.scroll-cue{
-  position:absolute; bottom:28px; inset-inline-start:50%; transform:translateX(50%);
-  width:26px; height:42px; border:2px solid rgba(255,255,255,.4); border-radius:20px;
+/* Quick Navigation Cards inside Hero bottom */
+.quick-nav-cards {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 20px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 16px;
 }
-.scroll-cue span{
-  display:block; width:4px; height:8px; background:var(--gold); border-radius:2px;
-  margin:6px auto; animation: scroll-dot 1.8s ease-in-out infinite;
+.quick-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: right;
+  transition: transform .3s var(--ease), background .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease);
 }
-@keyframes scroll-dot{
-  0%{ transform:translateY(0); opacity:1; }
-  70%{ transform:translateY(14px); opacity:0; }
-  100%{ opacity:0; }
+.quick-card:hover {
+  transform: translateY(-5px);
+  background: rgba(245, 166, 35, 0.15);
+  border-color: var(--gold);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+.quick-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+.quick-card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s var(--ease);
+}
+.quick-card:hover .quick-card-icon img {
+  transform: scale(1.1);
+}
+.quick-card-info h4 {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.quick-card-info p {
+  color: #C9D1C3;
+  font-size: 12px;
 }
 
-/* ==========================================================================
-   Signature wave divider — echoes the swoosh in the CRAVA wordmark
-   ========================================================================== */
+/* Wave Dividers & Section Shells */
 .wave-divider{ line-height:0; margin-top:-2px; }
 .wave-divider svg{ width:100%; height:60px; display:block; }
 .wave-into-dark{ margin-top:-2px; }
 
-/* ==========================================================================
-   Section shells
-   ========================================================================== */
 .section-inner{ max-width:1240px; margin:0 auto; padding:90px 24px; }
 .section-head{ max-width:640px; margin-bottom:56px; }
 .section-head.light{ color:var(--white); }
 .kicker{
-  color:var(--forest); font-weight:700; font-size:14px; letter-spacing:.3px; margin-bottom:10px;
+  color:var(--gold-light); font-weight:700; font-size:14px; letter-spacing:.3px; margin-bottom:10px;
 }
 .section-head.light .kicker{ color:var(--gold-light); }
-.section-title{ font-size:clamp(28px,4vw,42px); font-weight:800; margin-bottom:14px; color:var(--forest); }
+.section-title{ font-size:clamp(28px,4vw,42px); font-weight:800; margin-bottom:14px; color:var(--white); }
 .section-head.light .section-title{ color:var(--white); }
-.section-desc{ color:var(--text-muted); font-size:16px; }
+.section-desc{ color:#C9D1C3; font-size:16px; }
 .section-head.light .section-desc{ color:#C9D1C3; }
 
-/* ==========================================================================
-   Item photos — plain, swappable JPGs
-   Just replace the file at the given path (same filename) with your own
-   photo to update what shows on a card. No code changes needed.
-   ========================================================================== */
+.subsection-title {
+  color: var(--gold-light);
+  font-size: 22px;
+  font-weight: 800;
+  margin: 40px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(245, 166, 35, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Item photos */
 .item-photo{
   width:100%; aspect-ratio:1/1; border-radius:14px; overflow:hidden;
   margin-bottom:14px; background:var(--cream-2);
@@ -237,11 +268,8 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 }
 .fries-card:hover .item-photo-fries img{ transform:scale(1.1); }
 
-/* ==========================================================================
-   Juices
-   ========================================================================== */
+/* Juices */
 .juices{ background:var(--forest-dark); position:relative; }
-
 .juice-card{ display:flex; flex-direction:column; }
 
 .juice-feature{
@@ -292,11 +320,8 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .juice-card.featured h4{ color:var(--white); }
 .juice-card.featured .price{ background:rgba(255,255,255,.15); color:var(--gold-light); }
 
-/* ==========================================================================
-   IceCrava — single-item section, sits between Juices and Fries
-   ========================================================================== */
+/* IceCrava */
 .icecrava{ background: linear-gradient(180deg,var(--cream-2) 0%, #FCE4B0 100%); }
-
 .icecrava-card{
   display:flex; align-items:center; gap:44px;
   background:var(--white); border-radius:var(--radius-lg); padding:40px;
@@ -323,11 +348,9 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   padding:8px 20px; border-radius:999px; font-size:15px;
 }
 
-/* ==========================================================================
-   Fries
-   ========================================================================== */
+/* Fries */
 .fries { 
-  background: var(--gold-deep); /* یان var(--gold-light) بۆ زەردی کراوەتر */
+  background: var(--gold-deep); 
   position: relative; 
   overflow: hidden; 
 }
@@ -357,12 +380,41 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .fc-body{ flex:1; }
 .fc-body h4{ color:var(--white); font-size:17px; margin-bottom:4px; }
 .fc-body p{ color:#A9B2A2; font-size:13.5px; }
-.fries-card .price{ color:var(--gold-light); font-weight:700; font-size:14px; white-space:nowrap; }
-.fries-card.featured{ background:linear-gradient(90deg,rgba(245,166,35,.16),rgba(245,166,35,.03)); border-color:var(--gold); }
 
-/* ==========================================================================
-   Sauces
-   ========================================================================== */
+/* Price Sizes for Fries */
+.price-sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 90px;
+}
+.size-price {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(245, 166, 35, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.size-price .size-label {
+  color: #A9B2A2;
+  font-weight: normal;
+  font-size: 11px;
+}
+.size-price .size-value {
+  color: var(--gold-light);
+  font-weight: 700;
+}
+.fries-card.featured { background:linear-gradient(90deg,rgba(245,166,35,.16),rgba(245,166,35,.03)); border-color:var(--gold); }
+.fries-card.featured .size-price {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sauces */
 .sauces{ background:var(--ink-2); padding-bottom:20px; }
 .sauce-list{
   display:grid; grid-template-columns:repeat(5,1fr); gap:16px;
@@ -383,29 +435,47 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .sauce-name{ color:var(--white); font-weight:600; font-size:14.5px; }
 .sauce-item .price{ color:var(--gold-light); font-size:13px; font-weight:700; }
 
-/* ==========================================================================
-   Takeaway  strip — signature motion moment
-   ========================================================================== */
+/* Takeaway strip — Seamless Infinite Motion */
 .takeaway-strip{
   background: linear-gradient(90deg,var(--gold-deep),var(--gold));
-  overflow:hidden; padding:14px 0;
+  overflow: hidden;
+  padding: 14px 0;
+  width: 100%;
 }
-.{ width:100%; overflow:hidden; }
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+}
 .marquee-track{
-  display:flex; gap:14px; white-space:nowrap; width:max-content;
-  animation: marquee 4s linear infinite;
-  font-family:var(--font-display); font-weight:800; font-size:15px; color:var(--ink);
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee 16s linear infinite;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--ink);
 }
-.marquee-track span{ padding:0 6px; }
+.marquee-track span{
+  display: inline-flex;
+  align-items: center;
+  padding: 0 6px;
+}
 @keyframes marquee{
-  from{ transform:translateX(0); }
-  to{ transform:translateX(-50%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
-[dir="rtl"] .marquee-track{ animation-direction:; reverse; }
+[dir="rtl"] .marquee-track{
+  animation-name: marquee-rtl;
+}
+@keyframes marquee-rtl{
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
 
-/* =======================================================================
-   Footer
-   ========================================================================== */
+/* Footer */
 .site-footer{ background:var(--forest-dark); color:#D9DED4; padding-top:70px; }
 .footer-inner{
   max-width:1240px; margin:0 auto; padding:0 24px 50px;
@@ -429,9 +499,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   border-top:1px solid rgba(255,255,255,.08); text-align:center; padding:22px 24px; font-size:13px; color:#8B9384;
 }
 
-/* ==========================================================================
-   Scroll-reveal animation classes (toggled via JS/IntersectionObserver)
-   ========================================================================== */
+/* Scroll-reveal animation classes */
 .reveal-up{ opacity:0; transform:translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal-up.in-view{ opacity:1; transform:translateY(0); }
 
@@ -447,17 +515,15 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .delay-3{ transition-delay:.4s; }
 .delay-4{ transition-delay:.55s; }
 
-/* stagger juice/fries/sauce cards as they enter */
 .juice-card.in-view, .fries-card.in-view, .sauce-item.in-view{ opacity:1; transform:none; }
 .juice-card, .fries-card, .sauce-item{
   opacity:0; transform:translateY(20px);
   transition: opacity .6s var(--ease), transform .6s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease), background .35s var(--ease);
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
+/* Responsive */
 @media (max-width: 980px){
+  .quick-nav-cards { grid-template-columns: 1fr; }
   .juice-grid{ grid-template-columns:repeat(3,1fr); }
   .sauce-list{ grid-template-columns:repeat(3,1fr); }
   .footer-inner{ grid-template-columns:1fr 1fr; }
@@ -488,7 +554,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .icecrava-text p{ max-width:none; }
   .icecrava-icon{ width:130px; height:130px; }
 }
- {
+html, body {
   margin: 0 !important;
   padding: 0 !important;
   width: 100% !important;
@@ -511,20 +577,17 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .fries-card{ gap:12px; padding:14px 16px; }
   .icecrava-icon{ width:110px; height:110px; }
 }
-
 </style>
 </head>
 <body>
 
-<!-- ================= NOISE / GRAIN OVERLAY (purely decorative texture) ================= -->
 <div class="grain" aria-hidden="true"></div>
 
 <!-- ================= HEADER ================= -->
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a href="#hero" class="brand">
-      <img src="
-      crrrlogo.jpg" alt="کڕاڤە" class="brand-logo">
+      <img src="crrrlogo.jpg" alt="کڕاڤە" class="brand-logo">
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -543,11 +606,9 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
 <!-- ================= HERO ================= -->
 <section class="hero" id="hero">
-  <!-- ambient glow blobs -->
   <div class="hero-glow glow-green" aria-hidden="true"></div>
   <div class="hero-glow glow-gold" aria-hidden="true"></div>
 
-  <!-- floating fruit / fry particles -->
   <div class="floaters" aria-hidden="true">
     <span class="floater f1">🍊</span>
     <span class="floater f2">🍓</span>
@@ -561,11 +622,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
     <p class="eyebrow reveal-up delay-1"></p>
     <h1 class="hero-title reveal-up delay-2">
-    بەخێربێن <br>
+      بەخێربێن <br>
       <span class="accent-text"> بۆ کڕاڤا </span>
     </h1>
-    <p class="hero-sub reveal-up delay-3">شەربەتی میوەی فرێش و پەتاتەی گەرمی تازە بە جۆرەها تامی جیاواز لەگەڵ CRAVA تاقی بکەرەوە.
-    </p>
+    <p class="hero-sub reveal-up delay-3">شەربەتی میوەی فرێش و پەتاتەی گەرمی تازە بە جۆرەها تامی جیاواز لەگەڵ CRAVA تاقی بکەرەوە.</p>
 
     <div class="hero-actions reveal-up delay-4">
       <a href="#juices" class="btn btn-primary">
@@ -576,10 +636,38 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     </div>
   </div>
 
-  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  <!-- Quick Navigation Cards inside Hero bottom with JPG images -->
+  <div class="quick-nav-cards reveal-up delay-4">
+    <a href="#juices" class="quick-card">
+      <div class="quick-card-icon">
+        <img src="juice-icon.jpg" alt="شەربەتی میوە" loading="lazy">
+      </div>
+      <div class="quick-card-info">
+        <h4>شەربەتی میوە</h4>
+        <p>٢١ جۆر شەربەتی تازە و میکسی سروشتی</p>
+      </div>
+    </a>
+    <a href="#icecrava" class="quick-card">
+      <div class="quick-card-icon">
+        <img src="ice-icon.jpg" alt="ئایسکراڤا" loading="lazy">
+      </div>
+      <div class="quick-card-info">
+        <h4>ئایسکراڤا</h4>
+        <p>سارد و کرێمی تایبەت</p>
+      </div>
+    </a>
+    <a href="#fries" class="quick-card">
+      <div class="quick-card-icon">
+        <img src="fries-icon.jpg" alt="پەتاتەی گەرم" loading="lazy">
+      </div>
+      <div class="quick-card-info">
+        <h4>پەتاتەی گەرم</h4>
+        <p>٥ جۆری ترسکە و تاماوی</p>
+      </div>
+    </a>
+  </div>
 </section>
 
-<!-- ================= SIGNATURE WAVE DIVIDER ================= -->
 <div class="wave-divider" aria-hidden="true">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
     <path d="M0,30 C150,60 350,0 600,30 C850,60 1050,0 1200,30 L1200,60 L0,60 Z" fill="url(#waveGrad1)"/>
@@ -592,19 +680,18 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   </svg>
 </div>
 
-<!-- ================= JUICE SECTION ================= -->
+<!-- ================= JUICES ================= -->
 <section class="juices" id="juices">
   <div class="section-inner">
-
     <div class="section-head">
       <p class="kicker reveal-up">تازە · سروشتی · بەبێ شەکری زیادە</p>
-      <h2 class="section-title reveal-up">شیرەی میوەی تازە</h2>
-      <p class="section-desc reveal-up">١٥ جۆر شیرەی میوەی تازە، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
+      <h2 class="section-title reveal-up">شەربەتی میوە</h2>
+      <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
     </div>
 
     <div class="juice-feature reveal-up">
       <div class="juice-feature-img">
-        <img src="crglas.jpg" alt="شیرەی میوەی تازەی کڕاڤە" loading="lazy">
+        <img src="crglas.jpg" alt="شەربەتی میوەی تازەی کڕاڤە" loading="lazy">
         <div class="juice-feature-badge">
           <span class="badge-num">١٠٠٪</span>
           <span class="badge-txt">میوەی سروشتی</span>
@@ -612,34 +699,48 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
       </div>
       <div class="juice-feature-text">
         <h3>لە میوە بۆ گیلاس، لەبەردەم چاوت</h3>
-        <p>هەموو شیرەیەک لە میوەی تازەی ئەو ڕۆژە دروست دەکرێت، بەبێ کۆنسێرڤ و بەبێ شەکری دەرەکی. تامی ڕاستەقینەی میوە، هەر کاتێک پێویستت پێی بوو.</p>
+        <p>هەموو شەربەتێک لە میوەی تازەی ئەو ڕۆژە دروست دەکرێت، بەبێ کۆنسێرڤ و بەبێ شەکری دەرەکی. تامی ڕاستەقینەی میوە، هەر کاتێک پێویستت پێی بوو.</p>
       </div>
     </div>
 
+    <!-- Subsection 1: Mix Fruit Juices -->
+    <h3 class="subsection-title reveal-up">🍹 ١٠ جۆر میکسی میوە</h3>
     <div class="juice-grid">
-      <!-- 15 juice items — placeholder names & prices, easy to swap later.
-           Each card photo is a plain <img>: just replace the file in images/juice/
-           (keep the same filename) with your own JPG to update the photo. -->
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="شیرەی پرتەقاڵ" loading="lazy"></div><h4>شیرەی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="شیرەی لیمۆ و نەعنا" loading="lazy"></div><h4>شیرەی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="شیرەی تووی فەرەنگی" loading="lazy"></div><h4>شیرەی تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="شیرەی مانگۆ" loading="lazy"></div><h4>شیرەی مانگۆ</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-05.jpg" alt="شیرەی بەتیخ" loading="lazy"></div><h4>شیرەی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-06.jpg" alt="شیرەی ئەناناس" loading="lazy"></div><h4>شیرەی ئەناناس</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-07.jpg" alt="شیرەی کیوی" loading="lazy"></div><h4>شیرەی کیوی</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-08.jpg" alt="شیرەی سێو" loading="lazy"></div><h4>شیرەی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-09.jpg" alt="شیرەی تیرێ" loading="lazy"></div><h4>شیرەی تیرێ</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شیرەی شەفتاڵوو" loading="lazy"></div><h4>شیرەی شەفتاڵوو</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شیرەی هەنار" loading="lazy"></div><h4>شیرەی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شیرەی مۆز و شیر" loading="lazy"></div><h4>شیرەی مۆز و شیر</h4><span class="price">٣٠٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-13.jpg" alt="شیرەی گێلاس" loading="lazy"></div><h4>شیرەی گێلاس</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-14.jpg" alt="شیرەی گوێز و نارگیل" loading="lazy"></div><h4>شیرەی گوێز و نارگیل</h4><span class="price">٣٥٠٠ د.ع</span></article>
-      <article class="juice-card featured"><div class="item-photo"><img src="images/juice/juice-15.jpg" alt="تایبەتی کڕاڤە" loading="lazy"></div><h4>تایبەتی کڕاڤە — تێکەڵی گەرمسێری</h4><span class="price">٤٠٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>میکسی مانگۆ و پرتەقاڵ</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-05.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>میکسی سێو و کیوی</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-06.jpg" alt="میکسی ئەناناس و مانگۆ" loading="lazy"></div><h4>میکسی ئەناناس و مانگۆ</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-07.jpg" alt="میکسی هەنار و سێو" loading="lazy"></div><h4>میکسی هەنار و سێو</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-08.jpg" alt="میکسی بەتیخ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی بەتیخ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-09.jpg" alt="میکسی گوێز و مۆز" loading="lazy"></div><h4>میکسی گوێز و مۆز</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card featured"><div class="item-photo"><img src="images/juice/juice-15.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>تایبەتی کڕاڤە — میکسی گەرمسێری</h4><span class="price">٤٠٠٠ د.ع</span></article>
+    </div>
+
+    <!-- Subsection 2: Pure Fruit Juices -->
+    <h3 class="subsection-title reveal-up">🍊 ٥ جۆر شەربەتی میوە</h3>
+    <div class="juice-grid">
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-13.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-14.jpg" alt="شەربەتی بەتیخ" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
+    </div>
+
+    <!-- Subsection 3: Milkshakes -->
+    <h3 class="subsection-title reveal-up">🥤 ٦ جۆر میلکشەیک</h3>
+    <div class="juice-grid">
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-01.jpg" alt="Banana Shake" loading="lazy"></div><h4>Banana Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-02.jpg" alt="Strawberry Shake" loading="lazy"></div><h4>Strawberry Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-03.jpg" alt="Mango Shake" loading="lazy"></div><h4>Mango Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-04.jpg" alt="Pineapple Shake" loading="lazy"></div><h4>Pineapple Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-05.jpg" alt="Mixed Berry Shake" loading="lazy"></div><h4>Mixed Berry Shake</h4><span class="price">٤٠٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-06.jpg" alt="Kiwi Shake" loading="lazy"></div><h4>Kiwi Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
     </div>
   </div>
 </section>
 
-<!-- ================= WAVE DIVIDER (juice → icecrava) ================= -->
 <div class="wave-divider" aria-hidden="true">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
     <path d="M0,30 C150,60 350,0 600,30 C850,60 1050,0 1200,30 L1200,60 L0,60 Z" fill="url(#waveGrad3)"/>
@@ -652,30 +753,29 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   </svg>
 </div>
 
-<!-- ================= ICECRAVA SECTION (single item, directly under Juices) ================= -->
+<!-- ================= ICECRAVA ================= -->
 <section class="icecrava" id="icecrava">
   <div class="section-inner">
     <div class="section-head">
       <p class="kicker reveal-up">نوێ · سارد و کرێمی</p>
-      <h2 class="section-title reveal-up">ICECRAVA</h2>
-      <p class="section-desc reveal-up">ئایسکریمی تایبەتی کڕاڤە — یەک تامی نایاب، دروستکراو لە کاوا ستریت.</p>
+      <h2 class="section-title reveal-up" style="color: var(--forest);">ICECRAVA</h2>
+      <p class="section-desc reveal-up" style="color: var(--text-muted);">ئایسکریمی تایبەتی کڕاڤە — یەک تامی نایاب, دروستکراو لە کاوا ستریت.</p>
     </div>
 
     <div class="icecrava-card reveal-up">
       <div class="icecrava-icon">
-        <img src="images/icecrava.jpg" alt="ئایسکڕیمی کڕاڤە" loading="lazy">
+        <img src="icecrava.jpg" alt="ئایسکڕیمی کڕاڤە" loading="lazy">
       </div>
       <div class="icecrava-text">
         <span class="icecrava-tag">تاکە تام</span>
         <h3>ئایسکڕیمی کڕاڤە</h3>
-        <p>کرێمی سارد و نەرم، تێکەڵ لەگەڵ تامی میوەی تازە و تامی تایبەتی کڕاڤە. کۆتایی خۆشی ژەمەکەت.</p>
+        <p>کرێمی سارد و نەرم, تێکەڵ لەگەڵ تامی میوەی تازە و تامی تایبەتی کڕاڤە. کۆتایی خۆشی ژەمەکەت.</p>
         <span class="price">٣٥٠٠ د.ع</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= WAVE DIVIDER (inverted, into dark fries section) ================= -->
 <div class="wave-divider wave-into-dark" aria-hidden="true">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
     <path d="M0,30 C150,0 350,60 600,30 C850,0 1050,60 1200,30 L1200,60 L0,60 Z" fill="url(#waveGrad2)"/>
@@ -688,15 +788,15 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   </svg>
 </div>
 
-<!-- ================= FRIES SECTION ================= -->
+<!-- ================= FRIES ================= -->
 <section class="fries" id="fries">
   <div class="hero-glow glow-gold fries-glow" aria-hidden="true"></div>
 
   <div class="section-inner">
-    <div class="section-head ">
+    <div class="section-head">
       <p class="kicker reveal-up">ترسکە · گەرم · تازە سرخکراو</p>
       <h2 class="section-title reveal-up">پەتاتەی کڕاڤە</h2>
-      <p class="section-desc reveal-up">٥ جۆری تایبەت، هەموویان تازە دەسرخرێن دوای داواکردن.</p>
+      <p class="section-desc reveal-up">٥ جۆری تایبەت, هەموویان تازە دەسرخرێن دوای داواکردن، بە دوو قەبارەی جیاواز.</p>
     </div>
 
     <div class="fries-layout">
@@ -711,52 +811,71 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
             <h4>پەتاتەی کلاسیک</h4>
             <p>پەتاتەی ترسکەی سادە لەگەڵ خوێی تایبەت</p>
           </div>
-          <span class="price">٢٠٠٠ د.ع</span>
+          <div class="price-sizes">
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
+          </div>
         </article>
+
         <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-02.jpg" alt="پەتاتەی پەنیر" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی پەنیر</h4>
             <p>داپۆشراو بە سۆسی پەنیری گەرم</p>
           </div>
-          <span class="price">٣٠٠٠ د.ع</span>
+          <div class="price-sizes">
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
+          </div>
         </article>
+
         <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-03.jpg" alt="پەتاتەی تیخ" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی تیخ</h4>
             <p>بەهاراتی تیژ بۆ ئەوانەی حەز لە تام دەکەن</p>
           </div>
-          <span class="price">٢٥٠٠ د.ع</span>
+          <div class="price-sizes">
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
+          </div>
         </article>
+
         <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-04.jpg" alt="پەتاتەی سیر و مایۆنێز" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی سیر و مایۆنێز</h4>
             <p>تامێکی کرێمی لەگەڵ بۆنی سیری تازە</p>
           </div>
-          <span class="price">٢٥٠٠ د.ع</span>
+          <div class="price-sizes">
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
+          </div>
         </article>
+
         <article class="fries-card reveal-up featured">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-05.jpg" alt="پەتاتەی تایبەتی کڕاڤە" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی تایبەتی کڕاڤە</h4>
             <p>تێکەڵەی هەموو سۆسەکان + پارچە گۆشتی تایبەت</p>
           </div>
-          <span class="price">٤٥٠٠ د.ع</span>
+          <div class="price-sizes">
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٥٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٥٠٠ د.ع</span></div>
+          </div>
         </article>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SAUCES SECTION (directly under fries) ================= -->
+<!-- ================= SAUCES ================= -->
 <section class="sauces" id="sauces">
   <div class="section-inner">
     <div class="section-head light">
       <p class="kicker reveal-up">تاماوییەکان</p>
       <h2 class="section-title reveal-up">سۆسەکان</h2>
-      <p class="section-desc reveal-up">هەر سۆسێک بە تامێکی جیاواز، هاوڕێی چاکی پەتاتەکەت.</p>
+      <p class="section-desc reveal-up">هەر سۆسێک بە تامێکی جیاواز, هاوڕێی چاکی پەتاتەکەت.</p>
     </div>
 
     <ul class="sauce-list">
@@ -776,13 +895,15 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
       <span>کراڤا</span><span>•</span>
       <span>شەربەتی میوەی فريش</span><span>•</span>
       <span>پەتاتەی گەرمی تازە</span><span>•</span>
-       <span>کراڤا</span><span>•</span>
+      <span>کراڤا</span><span>•</span>
       <span>شەربەتی میوەی فريش</span><span>•</span>
       <span>پەتاتەی گەرمی تازە</span><span>•</span>
-       <span>کراڤا</span><span>•</span>
+      <span>کراڤا</span><span>•</span>
       <span>شەربەتی میوەی فريش</span><span>•</span>
       <span>پەتاتەی گەرمی تازە</span><span>•</span>
-  
+      <span>کراڤا</span><span>•</span>
+      <span>شەربەتی میوەی فريش</span><span>•</span>
+      <span>پەتاتەی گەرمی تازە</span><span>•</span>
     </div>
   </div>
 </section>
@@ -798,16 +919,15 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     <div class="footer-col">
       <h5>شوێنمان</h5>
       <p class="address"></p>
-      <p class="takeaway-note"> شەقامی کاوە(حریق)-بەرامبەر LC Waikiki </p>
+      <p class="takeaway-note">شەقامی کاوە(حریق)-بەرامبەر LC Waikiki</p>
     </div>
 
     <div class="footer-col">
       <h5>کراوەیە لە</h5>
       <p></p>
-      <p>٤:٠٠ دوای نیوەڕۆ  تاوەکو  ١٢:٠٠ شەو</p>
+      <p>٤:٠٠ دوای نیوەڕۆ تاوەکو ١٢:٠٠ شەو</p>
     </div>
 
- 
     <div class="footer-col">
       <h5>لەگەڵمان بن</h5>
       <div class="social-row">
@@ -822,35 +942,23 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
         </a>
         <a href="#" class="social-icon" aria-label="واتساپ">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21a9 9 0 1 0-7.8-4.5L3 21l4.6-1.2A9 9 0 0 0 12 21z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 9.5c0 4 3 6.5 6.5 6.5.6 0 1.5-.2 1.5-1v-1.3l-2-1-1 1c-1-.4-2.2-1.6-2.7-2.7l1-1-1-2H9c-.4 0-.5.7-.5 1.5z" fill="currentColor"/></svg>
-      <!-- Snapchat -->
-<a href="https://www.instagram.com/crava.krd?igsh=MWlodnU3aW9oa3Q5ag%3D%3D&utm_source=qr" target="_blank" class="social-icon" aria-label="سنەپچات">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2c-2.5 0-4.5 2-4.5 4.5v2c0 .5-.3 1-.8 1.2l-1 .5c-.3.2-.4.6-.2.9.4.5 1 .8 1.6.9.4.1.7.5.6.9-.3 1.4-1.3 2.5-2.6 2.9-.2.1-.3.3-.2.5.3.5 1 .8 1.7.8.7 0 1.3.4 1.6 1 .4.8 1.2 1.3 2.1 1.3h3.4c.9 0 1.7-.5 2.1-1.3.3-.6.9-1 1.6-1 .7 0 1.4-.3 1.7-.8.1-.2 0-.4-.2-.5-1.3-.4-2.3-1.5-2.6-2.9-.1-.4.2-.8.6-.9.6-.1 1.2-.4 1.6-.9.2-.3.1-.7-.2-.9l-1-.5c-.5-.2-.8-.7-.8-1.2v-2C16.5 4 14.5 2 12 2z"/>
-  </svg>
-</a>
-    
+        </a>
+        <a href="https://www.instagram.com/crava.krd?igsh=MWlodnU3aW9oa3Q5ag%3D%3D&utm_source=qr" target="_blank" class="social-icon" aria-label="سنەپچات">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2c-2.5 0-4.5 2-4.5 4.5v2c0 .5-.3 1-.8 1.2l-1 .5c-.3.2-.4.6-.2.9.4.5 1 .8 1.6.9.4.1.7.5.6.9-.3 1.4-1.3 2.5-2.6 2.9-.2.1-.3.3-.2.5.3.5 1 .8 1.7.8.7 0 1.3.4 1.6 1 .4.8 1.2 1.3 2.1 1.3h3.4c.9 0 1.7-.5 2.1-1.3.3-.6.9-1 1.6-1 .7 0 1.4-.3 1.7-.8.1-.2 0-.4-.2-.5-1.3-.4-2.3-1.5-2.6-2.9-.1-.4.2-.8.6-.9.6-.1 1.2-.4 1.6-.9.2-.3.1-.7-.2-.9l-1-.5c-.5-.2-.8-.7-.8-1.2v-2C16.5 4 14.5 2 12 2z"/>
+          </svg>
         </a>
       </div>
     </div>
   </div>
 
-
   <div class="footer-bottom">
-    <p>© ٢٠٢٦ کڕاڤە.   </p>
+    <p>© ٢٠٢٦ کڕاڤە.</p>
   </div>
 </footer>
 
 <script>
-/* ==========================================================================
-   CRAVA — site interactions
-   1) Header shrinks + gains background after scrolling past the hero
-   2) Mobile hamburger menu toggle
-   3) Scroll-reveal animations via IntersectionObserver (fires once per element)
-   ========================================================================== */
-
 document.addEventListener('DOMContentLoaded', () => {
-
-  /* ---------- 1) Sticky header state ---------- */
   const header = document.getElementById('siteHeader');
   const onScroll = () => {
     if (window.scrollY > 40) header.classList.add('scrolled');
@@ -859,7 +967,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ---------- 2) Mobile nav toggle ---------- */
   const menuToggle = document.getElementById('menuToggle');
   const mainNav = document.getElementById('mainNav');
 
@@ -870,7 +977,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
-  // close mobile nav when a link is tapped
   mainNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mainNav.classList.remove('open');
@@ -880,7 +986,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- 3) Scroll-reveal ---------- */
   const revealTargets = document.querySelectorAll(
     '.reveal-up, .reveal-scale, .reveal-left, .juice-card, .fries-card, .sauce-item'
   );
@@ -896,12 +1001,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealTargets.forEach(el => io.observe(el));
 
-  // hero content is above the fold — reveal immediately on load, no scroll needed
   document.querySelectorAll('.hero .reveal-up, .hero .reveal-scale').forEach(el => {
     requestAnimationFrame(() => el.classList.add('in-view'));
   });
 
-  /* stagger the card grids slightly for a livelier cascade */
   const staggerGroups = [
     document.querySelectorAll('.juice-card'),
     document.querySelectorAll('.fries-card'),
@@ -913,7 +1016,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
 </script>
 </body>
 </html>
