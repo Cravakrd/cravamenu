@@ -3,7 +3,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CRAVA</title>
-<meta name="description" content="کڕاڤە - شەربەتی میوەی تازە و پەتاتەی گەرم
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700;800;900&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -866,7 +865,7 @@ html, body {
 
 <!-- Preloader -->
 <div id="preloader">
-  <img src="IMG_8042.png" alt="CRAVA" class="loader-logo">
+  <img src="crrrlogo.jpg" alt="CRAVA" class="loader-logo">
   <div class="loader-spinner"></div>
 </div>
 
@@ -876,7 +875,7 @@ html, body {
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a href="#hero" class="brand">
-      <img src="IMG_8042.png" alt="کڕاڤە" class="brand-logo">
+      <img src="crrrlogo.jpg" alt="کڕاڤە" class="brand-logo">
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -908,7 +907,7 @@ html, body {
   </div>
 
   <div class="hero-inner">
-    <img src="IMG_8042.png" alt="کڕاڤە" class="hero-logo reveal-scale">
+    <img src="crrrlogo.jpg" alt="کڕاڤە" class="hero-logo reveal-scale">
 
     <p class="eyebrow reveal-up delay-1"></p>
     <h1 class="hero-title reveal-up delay-2">
@@ -1255,7 +1254,7 @@ html, body {
 <footer class="site-footer" id="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="IMG_8042.png" alt="کڕاڤە" class="footer-logo">
+      <img src="crrrlogo.jpg" alt="کڕاڤە" class="footer-logo">
       <p></p>
     </div>
 
