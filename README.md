@@ -866,7 +866,7 @@ html, body {
 
 <!-- Preloader -->
 <div id="preloader">
-  <img src="crrrlogo.jpg" alt="CRAVA" class="loader-logo">
+  <img src="IMG_8042.png" alt="CRAVA" class="loader-logo">
   <div class="loader-spinner"></div>
 </div>
 
@@ -876,7 +876,7 @@ html, body {
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a href="#hero" class="brand">
-      <img src="crrrlogo.jpg" alt="کڕاڤە" class="brand-logo">
+      <img src="IMG_8042.png" alt="کڕاڤە" class="brand-logo">
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -908,7 +908,7 @@ html, body {
   </div>
 
   <div class="hero-inner">
-    <img src="crrrlogo.jpg" alt="کڕاڤە" class="hero-logo reveal-scale">
+    <img src="IMG_8042.png" alt="کڕاڤە" class="hero-logo reveal-scale">
 
     <p class="eyebrow reveal-up delay-1"></p>
     <h1 class="hero-title reveal-up delay-2">
@@ -1255,7 +1255,7 @@ html, body {
 <footer class="site-footer" id="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="crrrlogo.jpg" alt="کڕاڤە" class="footer-logo">
+      <img src="IMG_8042.png" alt="کڕاڤە" class="footer-logo">
       <p></p>
     </div>
 
