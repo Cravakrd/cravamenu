@@ -243,7 +243,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 }
 .btn-ghost:hover{ background:rgba(255,255,255,.16); transform:translateY(-3px); }
 
-/* Quick Navigation Cards inside Hero bottom */
+/* Quick Navigation Cards */
 .quick-nav-cards {
   position: relative;
   z-index: 2;
@@ -315,7 +315,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   font-size: 11px;
 }
 
-/* Wave Dividers & Section Shells */
+/* Wave Dividers */
 .wave-divider{ line-height:0; margin-top:-2px; }
 .wave-divider svg{ width:100%; height:60px; display:block; }
 .wave-into-dark{ margin-top:-2px; }
@@ -352,7 +352,6 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 /* Juices */
 .juices{ background:var(--forest-dark); position:relative; }
 
-/* Category Tabs for Juices */
 .juice-tabs {
   display: flex;
   justify-content: center;
@@ -373,9 +372,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
   transition: all .3s var(--ease);
 }
-.tab-btn:hover {
-  background: var(--glass-dark-fill-strong);
-}
+.tab-btn:hover { background: var(--glass-dark-fill-strong); }
 .tab-btn.active {
   background: linear-gradient(160deg,var(--gold-light),var(--gold-deep));
   color: var(--ink);
@@ -383,21 +380,14 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   box-shadow: 0 8px 22px -6px rgba(245, 166, 35, 0.55), inset 0 1px 0 rgba(255,255,255,.6);
 }
 
-.juice-category {
-  display: none;
-  animation: fadeIn .4s var(--ease);
-}
-.juice-category.active {
-  display: block;
-}
+.juice-category { display: none; animation: fadeIn .4s var(--ease); }
+.juice-category.active { display: block; }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.juice-grid{
-  display:grid; grid-template-columns:repeat(5,1fr); gap:18px;
-}
+.juice-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:18px; }
 .juice-card{
   position:relative; isolation:isolate; overflow:hidden;
   background: var(--glass-light-fill);
@@ -435,17 +425,13 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .juice-card.featured h4{ color:var(--white); }
 .juice-card.featured .price{ background:rgba(255,255,255,.15); color:var(--gold-light); }
 
-/* CRAVA Combo Section */
+/* Combos */
 .combos {
   background: linear-gradient(180deg, var(--forest-dark) 0%, #153320 100%);
   position: relative;
   padding-bottom: 20px;
 }
-.combo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
+.combo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .combo-card {
   background: var(--glass-dark-fill);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -478,62 +464,25 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   border: 2px solid var(--gold);
 }
 .combo-badge {
-  position: absolute;
-  top: 16px;
-  inset-inline-end: 16px;
-  background: var(--gold);
-  color: var(--ink);
-  font-size: 11px;
-  font-weight: 800;
-  padding: 4px 12px;
-  border-radius: 999px;
-  text-transform: uppercase;
-  z-index: 2;
+  position: absolute; top: 16px; inset-inline-end: 16px;
+  background: var(--gold); color: var(--ink);
+  font-size: 11px; font-weight: 800; padding: 4px 12px;
+  border-radius: 999px; text-transform: uppercase; z-index: 2;
 }
 .combo-img {
-  width: 100%;
-  aspect-ratio: 16/10;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255,255,255,.14);
-  position: relative;
+  width: 100%; aspect-ratio: 16/10; border-radius: var(--radius-md);
+  overflow: hidden; margin-bottom: 20px; background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255,255,255,.14); position: relative;
 }
-.combo-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .5s var(--ease);
-}
-.combo-card:hover .combo-img img {
-  transform: scale(1.08);
-}
-.combo-card h3 {
-  color: var(--white);
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-.combo-card p {
-  color: #C9D1C3;
-  font-size: 14px;
-  margin-bottom: 20px;
-  flex-grow: 1;
-}
+.combo-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+.combo-card:hover .combo-img img { transform: scale(1.08); }
+.combo-card h3 { color: var(--white); font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+.combo-card p { color: #C9D1C3; font-size: 14px; margin-bottom: 20px; flex-grow: 1; }
 .combo-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 16px;
-  margin-top: auto;
+  display: flex; align-items: center; justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 16px; margin-top: auto;
 }
-.combo-price {
-  color: var(--gold-light);
-  font-weight: 800;
-  font-size: 18px;
-}
+.combo-price { color: var(--gold-light); font-weight: 800; font-size: 18px; }
 
 /* IceCrava */
 .icecrava{ background: linear-gradient(180deg,var(--cream-2) 0%, #FCE4B0 100%); }
@@ -575,16 +524,9 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 }
 
 /* Fries */
-.fries { 
-  background: var(--gold-deep); 
-  position: relative; 
-  overflow: hidden; 
-}
+.fries { background: var(--gold-deep); position: relative; overflow: hidden; }
 .fries-glow{ top:10%; inset-inline-start:50%; transform:translateX(-50%); opacity:.28; }
-
-.fries-layout{
-  display:grid; grid-template-columns: 1fr 1fr; gap:52px; align-items:center;
-}
+.fries-layout{ display:grid; grid-template-columns: 1fr 1fr; gap:52px; align-items:center; }
 .fries-feature-img{
   position:relative; border-radius:var(--radius-lg); overflow:hidden;
   border: 1px solid rgba(255,255,255,.25);
@@ -605,54 +547,28 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   box-shadow: inset 0 1px 0 rgba(255,255,255,.14);
   transition: transform .3s var(--ease), background .3s var(--ease), border-color .3s var(--ease);
 }
-.fries-card:hover{
-  transform:translateX(-6px); background:rgba(255,255,255,.16); border-color:var(--white);
-}
+.fries-card:hover{ transform:translateX(-6px); background:rgba(255,255,255,.16); border-color:var(--white); }
 [dir="rtl"] .fries-card:hover{ transform:translateX(6px); }
 .fc-body{ flex:1; }
 .fc-body h4{ color:var(--white); font-size:17px; margin-bottom:4px; }
 .fc-body p{ color:#A9B2A2; font-size:13.5px; }
 
-/* Price Sizes for Fries */
-.price-sizes {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-width: 90px;
-}
+.price-sizes { display: flex; flex-direction: column; gap: 6px; min-width: 90px; }
 .size-price {
   background: rgba(0, 0, 0, 0.22);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border: 1px solid rgba(245, 166, 35, 0.25);
-  padding: 4px 8px;
-  border-radius: 10px;
-  font-size: 12.5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
+  padding: 4px 8px; border-radius: 10px; font-size: 12.5px;
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
 }
-.size-price .size-label {
-  color: #A9B2A2;
-  font-weight: normal;
-  font-size: 11px;
-}
-.size-price .size-value {
-  color: var(--gold-light);
-  font-weight: 700;
-}
+.size-price .size-label { color: #A9B2A2; font-weight: normal; font-size: 11px; }
+.size-price .size-value { color: var(--gold-light); font-weight: 700; }
 .fries-card.featured { background:linear-gradient(90deg,rgba(245,166,35,.16),rgba(245,166,35,.03)); border-color:var(--gold); }
-.fries-card.featured .size-price {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-}
+.fries-card.featured .size-price { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); }
 
 /* Sauces */
 .sauces{ background:var(--ink-2); padding-bottom:20px; }
-.sauce-list{
-  display:grid; grid-template-columns:repeat(5,1fr); gap:16px;
-}
+.sauce-list{ display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
 .sauce-item{
   background: var(--glass-dark-fill);
   -webkit-backdrop-filter: var(--glass-blur-soft);
@@ -676,41 +592,69 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 /* Takeaway strip */
 .takeaway-strip{
   background: linear-gradient(90deg,var(--gold-deep),var(--gold));
-  overflow: hidden;
-  padding: 14px 0;
-  width: 100%;
+  overflow: hidden; padding: 14px 0; width: 100%;
 }
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  white-space: nowrap;
-}
+.marquee { width: 100%; overflow: hidden; display: flex; white-space: nowrap; }
 .marquee-track{
-  display: flex;
-  gap: 20px;
-  width: max-content;
+  display: flex; gap: 20px; width: max-content;
   animation: marquee 16s linear infinite;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 15px;
-  color: var(--ink);
+  font-family: var(--font-display); font-weight: 800; font-size: 15px; color: var(--ink);
 }
-.marquee-track span{
-  display: inline-flex;
-  align-items: center;
-  padding: 0 6px;
+.marquee-track span{ display: inline-flex; align-items: center; padding: 0 6px; }
+@keyframes marquee{ 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+[dir="rtl"] .marquee-track{ animation-name: marquee-rtl; }
+@keyframes marquee-rtl{ 0% { transform: translateX(0); } 100% { transform: translateX(50%); } }
+
+/* ================= REVIEWS SECTION ================= */
+.reviews-section {
+  background: var(--forest-dark);
+  padding: 80px 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
-@keyframes marquee{
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.review-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--glass-dark-fill);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-dark-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--glass-shadow-dark);
 }
-[dir="rtl"] .marquee-track{
-  animation-name: marquee-rtl;
+.review-form-container h3 {
+  color: var(--white);
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
 }
-@keyframes marquee-rtl{
-  0% { transform: translateX(0); }
-  100% { transform: translateX(50%); }
+.form-group {
+  margin-bottom: 18px;
+}
+.form-group label {
+  display: block;
+  color: var(--gold-light);
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--glass-dark-border);
+  background: rgba(255,255,255,0.06);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.form-control:focus {
+  border-color: var(--gold);
+}
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
 }
 
 /* Footer */
@@ -739,7 +683,48 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.08); text-align:center; padding:22px 24px; font-size:13px; color:#8B9384;
+  display: flex; justify-content: center; align-items: center; max-width: 1240px; margin: 0 auto;
 }
+#secretAdminTrigger {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* ================= ADMIN MODAL ================= */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 99999;
+  background: rgba(0,0,0,0.8); backdrop-filter: blur(10px);
+  display: none; align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.active { display: flex; }
+.modal-content {
+  background: var(--ink-2); border: 1px solid var(--glass-dark-border);
+  border-radius: var(--radius-lg); width: 100%; max-width: 800px;
+  max-height: 90vh; overflow-y: auto; padding: 32px; color: var(--white);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.8); position: relative;
+}
+.modal-close {
+  position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.1);
+  border: none; color: var(--white); width: 36px; height: 36px; border-radius: 50%;
+  font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.admin-tabs {
+  display: flex; gap: 12px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 14px; margin-bottom: 24px; margin-top: 10px;
+}
+.admin-tab-btn {
+  background: none; border: none; color: #A9B2A2; font-weight: 700; font-size: 15px; padding: 8px 16px; border-radius: 10px;
+}
+.admin-tab-btn.active { background: var(--gold); color: var(--ink); }
+.admin-panel-section { display: none; }
+.admin-panel-section.active { display: block; }
+
+.review-card-admin {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px; padding: 16px; margin-bottom: 12px;
+}
+.review-card-admin .rating { color: var(--gold); font-size: 16px; margin-bottom: 6px; }
+.review-card-admin p { color: #D9DED4; font-size: 14px; }
 
 /* Scroll-reveal animation classes */
 .reveal-up{ opacity:0; transform:translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
@@ -790,23 +775,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .menu-toggle{ display:flex; }
 
   .fries-layout{ grid-template-columns:1fr; }
-  
-  /* گۆڕینی بەشی شەربەت بۆ ٣ ئایتم لەسەر مۆبایل */
-  .juice-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 12px;
-  }
-  .juice-card {
-    padding: 16px 8px; 
-  }
-  .juice-card h4 {
-    font-size: 13px; 
-    min-height: 38px;
-  }
-  .juice-card .price {
-    font-size: 12px;
-    padding: 4px 10px;
-  }
+  .juice-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 12px; }
+  .juice-card { padding: 16px 8px; }
+  .juice-card h4 { font-size: 13px; min-height: 38px; }
+  .juice-card .price { font-size: 12px; padding: 4px 10px; }
 
   .sauce-list{ grid-template-columns:repeat(2,1fr); }
   .footer-inner{ grid-template-columns:1fr; text-align:center; }
@@ -823,22 +795,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .btn{ padding:14px 22px; font-size:14px; }
   .quick-nav-cards { grid-template-columns: 1fr; }
   
-  /* ڕێکخستنی ٣ ئایتمەکە بۆ شاشە زۆر بچووکەکان */
-  .juice-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 8px;
-  }
-  .juice-card {
-    padding: 12px 6px;
-  }
-  .juice-card h4 {
-    font-size: 11px;
-    min-height: 34px;
-  }
-  .juice-card .price {
-    font-size: 11px;
-    padding: 3px 8px;
-  }
+  .juice-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 8px; }
+  .juice-card { padding: 12px 6px; }
+  .juice-card h4 { font-size: 11px; min-height: 34px; }
+  .juice-card .price { font-size: 11px; padding: 3px 8px; }
 
   .item-photo-fries{ width:52px; height:52px; }
   .fries-card{ gap:12px; padding:14px 16px; }
@@ -846,19 +806,11 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 }
 
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
+  margin: 0 !important; padding: 0 !important; width: 100% !important;
+  max-width: 100% !important; overflow-x: hidden !important;
 }
 
-.hero {
-  margin: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 100% !important;
-}
+.hero { margin: 0 !important; padding-left: 0 !important; padding-right: 0 !important; width: 100% !important; }
 </style>
 </head>
 <body>
@@ -925,7 +877,6 @@ html, body {
     </div>
   </div>
 
-  <!-- Quick Navigation Cards inside Hero bottom with JPG images -->
   <div class="quick-nav-cards reveal-up delay-4">
     <a href="#juices" class="quick-card">
       <div class="quick-card-icon">
@@ -937,9 +888,7 @@ html, body {
       </div>
     </a>
     <a href="#combos" class="quick-card">
-      <div class="quick-card-icon">
-        🍿
-      </div>
+      <div class="quick-card-icon">🍿</div>
       <div class="quick-card-info">
         <h4>کڕاڤە کۆمبۆ</h4>
         <p>مێکسی پەتاتە و شەربەت</p>
@@ -987,16 +936,14 @@ html, body {
       <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
     </div>
 
-    <!-- دوگمەکانی جیاکردنەوە (Tabs) -->
     <div class="juice-tabs reveal-up">
       <button class="tab-btn active" data-target="mix-juices">میکسی میوە</button>
       <button class="tab-btn" data-target="pure-juices">شەربەتی میوە</button>
       <button class="tab-btn" data-target="milkshakes">میلکشەیک</button>
     </div>
 
-    <!-- Subsection 1: Mix Fruit Juices -->
     <div class="juice-category active" id="mix-juices">
-      <div class="juice-grid">
+      <div class="juice-grid" id="mix-juices-grid">
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
@@ -1010,9 +957,8 @@ html, body {
       </div>
     </div>
 
-    <!-- Subsection 2: Pure Fruit Juices -->
     <div class="juice-category" id="pure-juices">
-      <div class="juice-grid">
+      <div class="juice-grid" id="pure-juices-grid">
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
@@ -1021,9 +967,8 @@ html, body {
       </div>
     </div>
 
-    <!-- Subsection 3: Milkshakes -->
     <div class="juice-category" id="milkshakes">
-      <div class="juice-grid">
+      <div class="juice-grid" id="milkshakes-grid">
         <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-01.jpg" alt="Banana Shake" loading="lazy"></div><h4>Banana Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-02.jpg" alt="Strawberry Shake" loading="lazy"></div><h4>Strawberry Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-03.jpg" alt="Mango Shake" loading="lazy"></div><h4>Mango Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
@@ -1230,6 +1175,30 @@ html, body {
   </div>
 </section>
 
+<!-- ================= REVIEWS SECTION ================= -->
+<section class="reviews-section" id="reviews">
+  <div class="review-form-container reveal-up">
+    <h3>پێداچوونەوە و ڕای خۆت بنووسە ✍️</h3>
+    <form id="reviewForm">
+      <div class="form-group">
+        <label>پلەبەندی (١ تا ٥ ئەستێرە):</label>
+        <select id="reviewerRating" class="form-control" required>
+          <option value="5">⭐⭐⭐⭐⭐ (زۆر نایاب)</option>
+          <option value="4">⭐⭐⭐⭐ (باشە)</option>
+          <option value="3">⭐⭐⭐ (مامناوەند)</option>
+          <option value="2">⭐⭐ (خراپ نییە)</option>
+          <option value="1">⭐ (پێویستی بە باشترکردنە)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>پەیام یان ڕاکەت:</label>
+        <textarea id="reviewerMessage" class="form-control" placeholder="ڕاو سەرنجەکانت لێرە بنووسە..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">ناردنی پێداچوونەوە</button>
+    </form>
+  </div>
+</section>
+
 <!-- ================= TAKEAWAY STRIP ================= -->
 <section class="takeaway-strip">
   <div class="marquee">
@@ -1295,15 +1264,190 @@ html, body {
   </div>
 
   <div class="footer-bottom">
-    <p>© ٢٠٢٦ کڕاڤە.</p>
+    <p id="secretAdminTrigger" style="cursor: pointer; display: inline-block;">© ٢٠٢٦ کڕاڤە.</p>
   </div>
 </footer>
 
+<!-- ================= ADMIN MODAL ================= -->
+<div class="modal-overlay" id="adminModal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeAdminModalBtn">&times;</button>
+    
+    <!-- Auth Section -->
+    <div id="adminAuthSection">
+      <h3 style="margin-bottom: 16px; color: var(--gold-light);">چوونەژوورەوەی ئەدمین 🔐</h3>
+      <div class="form-group">
+        <label>وشەی نهێنی (Password):</label>
+        <input type="password" id="adminPasswordInput" class="form-control" placeholder="وشەی نهێنی بنووسە...">
+      </div>
+      <button class="btn btn-primary" id="adminLoginBtn" style="width:100%; justify-content:center;">دڵنیاکردنەوە</button>
+    </div>
+
+    <!-- Main Panel -->
+    <div id="adminPanelSection" style="display: none;">
+      <h3 style="color: var(--gold-light);">پەنێڵی بەڕێوەبردنی کڕاڤە</h3>
+      <div class="admin-tabs">
+        <button class="admin-tab-btn active" data-tab="tab-add-item">زیادکردنی ئایتم</button>
+        <button class="admin-tab-btn" data-tab="tab-reviews">بینینی ڕیڤیوەکان</button>
+      </div>
+
+      <!-- Tab 1: Add Item -->
+      <div class="admin-panel-section active" id="tab-add-item">
+        <form id="addItemForm">
+          <div class="form-group">
+            <label>بەش (Category):</label>
+            <select id="itemCategory" class="form-control">
+              <option value="mix-juices">شەربەت - میکسی میوە</option>
+              <option value="pure-juices">شەربەتی سروشتی</option>
+              <option value="milkshakes">میلکشەیک</option>
+              <option value="combos">کۆمبۆکان</option>
+              <option value="fries">پەتاتە</option>
+              <option value="sauces">سۆسەکان</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>ناوی ئایتم:</label>
+            <input type="text" id="itemName" class="form-control" placeholder="نموونە: شەربەتی مووز">
+          </div>
+          <div class="form-group">
+            <label>نرخ (بە د.ع):</label>
+            <input type="text" id="itemPrice" class="form-control" placeholder="نموونە: ٣٥٠٠ د.ع">
+          </div>
+          <div class="form-group">
+            <label>وێنەی ئایتم (ئارەزوومەندانە - Optional):</label>
+            <input type="file" id="itemImageFile" class="form-control" accept="image/*">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">زەخیرەکردنی ئایتم</button>
+        </form>
+      </div>
+
+      <!-- Tab 2: Reviews -->
+      <div class="admin-panel-section" id="tab-reviews">
+        <div id="reviewsListAdmin">
+          <p style="color: #A9B2A2;">چاوەڕێی بارکردنی پێداچوونەوەکانە...</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= FIREBASE SDKs & LOGIC ================= -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+  import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC_6pie74vrvFIYJDT0QOaQeLaZO8fSWOo",
+    authDomain: "crava-65b13.firebaseapp.com",
+    databaseURL: "https://crava-65b13-default-rtdb.firebaseio.com",
+    projectId: "crava-65b13",
+    storageBucket: "crava-65b13.firebasestorage.app",
+    messagingSenderId: "697423980333",
+    appId: "1:697423980333:web:bf0f83e3d731f145bf95a4"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const storage = getStorage(app);
+
+  /* Send Review */
+  const reviewForm = document.getElementById('reviewForm');
+  if(reviewForm) {
+    reviewForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const rating = document.getElementById('reviewerRating').value;
+      const message = document.getElementById('reviewerMessage').value;
+
+      try {
+        await addDoc(collection(db, "reviews"), {
+          rating: parseInt(rating),
+          message: message,
+          timestamp: new Date()
+        });
+        alert('سوپاس! پێداچوونەوەکەت بە سەرکەوتوویی ڕەوانەی ئەدمین کرا.');
+        reviewForm.reset();
+      } catch (error) {
+        console.error("Error adding review: ", error);
+        alert('کێشەیەک ڕوویدا، تکایە ئینتەرنێت یان ڕێکخستنی فایربەیس بپشکنە.');
+      }
+    });
+  }
+
+  /* Admin Add Item */
+  const addItemForm = document.getElementById('addItemForm');
+  if(addItemForm) {
+    addItemForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const category = document.getElementById('itemCategory').value;
+      const name = document.getElementById('itemName').value;
+      const price = document.getElementById('itemPrice').value;
+      const fileInput = document.getElementById('itemImageFile');
+      const file = fileInput.files[0];
+
+      let imageUrl = "";
+
+      try {
+        if(file) {
+          const storageRef = ref(storage, 'items/' + Date.now() + '_' + file.name);
+          const snapshot = await uploadBytes(storageRef, file);
+          imageUrl = await getDownloadURL(snapshot.ref);
+        }
+
+        await addDoc(collection(db, "items"), {
+          category: category,
+          name: name,
+          price: price,
+          imageUrl: imageUrl,
+          createdAt: new Date()
+        });
+
+        alert('ئایتمەکە بە سەرکەوتوویی زیادرکرا!');
+        addItemForm.reset();
+      } catch (err) {
+        console.error("Error uploading item:", err);
+        alert('کێشەیەک لە زەخیرەکردنی ئایتمەکە ڕوویدا.');
+      }
+    });
+  }
+
+  /* Load Reviews for Admin */
+  window.loadAdminReviews = async function() {
+    const listContainer = document.getElementById('reviewsListAdmin');
+    listContainer.innerHTML = '<p style="color: #A9B2A2;">لە بارکردندایە...</p>';
+
+    try {
+      const q = query(collection(db, "reviews"), orderBy("timestamp", "desc"));
+      const querySnapshot = await getDocs(q);
+      
+      if(querySnapshot.empty) {
+        listContainer.innerHTML = '<p style="color: #A9B2A2;">هیچ پێداچوونەوەیەک ڕەوانە نەکراوە.</p>';
+        return;
+      }
+
+      let html = '';
+      querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        const stars = '⭐'.repeat(data.rating || 5);
+        html += `
+          <div class="review-card-admin">
+            <div class="rating">${stars}</div>
+            <p>${data.message}</p>
+          </div>
+        `;
+      });
+      listContainer.innerHTML = html;
+    } catch (err) {
+      console.error(err);
+      listContainer.innerHTML = '<p style="color: #ff6b6b;">کێشەیەک لە بارکردنی ڕیڤیوەکان هەیە.</p>';
+    }
+  }
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  /* کۆدی شاشەی لۆدینگ (Preloader) */
   const preloader = document.getElementById('preloader');
-  // دوای ٨٠٠ میللی چرکە لۆدینگەگە لا دەچێت بۆ ئەوەی جوان دەربکەوێت
   setTimeout(() => {
     preloader.classList.add('loaded');
   }, 800);
@@ -1335,7 +1479,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* کۆدی تابەکانی شەربەت (Tab System) */
   const tabBtns = document.querySelectorAll('.tab-btn');
   const categories = document.querySelectorAll('.juice-category');
 
@@ -1373,17 +1516,49 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(() => el.classList.add('in-view'));
   });
 
-  const staggerGroups = [
-    document.querySelectorAll('.juice-card'),
-    document.querySelectorAll('.fries-card'),
-    document.querySelectorAll('.sauce-item'),
-    document.querySelectorAll('.combo-card')
-  ];
-  staggerGroups.forEach(group => {
-    group.forEach((el, i) => {
-      el.style.transitionDelay = `${Math.min(i * 60, 480)}ms`;
+  /* Admin Modal (Secret Trigger) */
+  const secretAdminTrigger = document.getElementById('secretAdminTrigger');
+  const closeAdminModalBtn = document.getElementById('closeAdminModalBtn');
+  const adminModal = document.getElementById('adminModal');
+  const adminLoginBtn = document.getElementById('adminLoginBtn');
+  const adminPasswordInput = document.getElementById('adminPasswordInput');
+  const adminAuthSection = document.getElementById('adminAuthSection');
+  const adminPanelSection = document.getElementById('adminPanelSection');
+
+  if(secretAdminTrigger) {
+    secretAdminTrigger.addEventListener('click', () => {
+      adminModal.classList.add('active');
+    });
+  }
+
+  if(closeAdminModalBtn) {
+    closeAdminModalBtn.addEventListener('click', () => {
+      adminModal.classList.remove('active');
+    });
+  }
+
+  if(adminLoginBtn) {
+    adminLoginBtn.addEventListener('click', () => {
+      if (adminPasswordInput.value === 'crava2026') {
+        adminAuthSection.style.display = 'none';
+        adminPanelSection.style.display = 'block';
+        if(window.loadAdminReviews) window.loadAdminReviews();
+      } else {
+        alert('وشەی نهێنی هەڵەیە!');
+      }
+    });
+  }
+
+  const adminTabBtns = document.querySelectorAll('.admin-tab-btn');
+  adminTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      adminTabBtns.forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.admin-panel-section').forEach(sec => sec.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
     });
   });
+
 });
 </script>
 </body>
