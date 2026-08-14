@@ -333,91 +333,6 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .section-desc{ color:#C9D1C3; font-size:16px; }
 .section-head.light .section-desc{ color:#C9D1C3; }
 
-/* Section head row (title + top-rated button) */
-.section-head-row{
-  display:flex; align-items:flex-end; justify-content:space-between; gap:20px; flex-wrap:wrap;
-  margin-bottom:46px;
-}
-.section-head-row .section-head{ margin-bottom:0; }
-
-/* Top Rated toggle button */
-.top-rated-btn{
-  display:inline-flex; align-items:center; gap:8px;
-  padding:12px 22px; border-radius:var(--radius-pill); font-weight:700; font-size:14px;
-  background: linear-gradient(160deg,var(--gold-light),var(--gold) 55%,var(--gold-deep));
-  color:var(--ink); border:1px solid rgba(255,255,255,.4);
-  box-shadow: 0 12px 26px -10px rgba(245,166,35,.6), inset 0 1px 0 rgba(255,255,255,.6);
-  transition: transform .3s var(--ease), box-shadow .3s var(--ease), filter .3s var(--ease);
-  white-space:nowrap; flex-shrink:0;
-}
-.top-rated-btn:hover{ transform:translateY(-3px); box-shadow:0 18px 36px -12px rgba(245,166,35,.75); }
-.top-rated-btn.active{ filter:brightness(1.08); box-shadow:0 0 0 3px rgba(245,166,35,.35), 0 12px 26px -10px rgba(245,166,35,.7); }
-.top-rated-btn .trophy{ font-size:16px; }
-.top-rated-btn .tr-label-off{ display:inline; }
-.top-rated-btn .tr-label-on{ display:none; }
-.top-rated-btn.active .tr-label-off{ display:none; }
-.top-rated-btn.active .tr-label-on{ display:inline; }
-
-.top-rated-btn.dark{
-  background: var(--glass-dark-fill);
-  color: var(--white);
-  border:1px solid var(--glass-dark-border);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.16);
-}
-.top-rated-btn.dark:hover{ background:var(--glass-dark-fill-strong); }
-.top-rated-btn.dark.active{
-  background: linear-gradient(160deg,var(--gold-light),var(--gold) 55%,var(--gold-deep));
-  color:var(--ink);
-}
-
-/* Rank badge shown on cards when Top Rated view is active */
-.rank-badge{
-  position:absolute; top:14px; inset-inline-start:14px; z-index:3;
-  width:30px; height:30px; border-radius:50%;
-  display:none; align-items:center; justify-content:center;
-  background: var(--gold); color:var(--ink);
-  font-weight:800; font-size:13px;
-  box-shadow:0 6px 14px -4px rgba(0,0,0,.4);
-}
-.rank-badge.gold{ background:linear-gradient(160deg,#FFE08A,#F5A623); }
-.rank-badge.silver{ background:linear-gradient(160deg,#F1F1F1,#C7CDC4); }
-.rank-badge.bronze{ background:linear-gradient(160deg,#E7B27B,#B9782F); color:var(--white); }
-.top-rated-mode .rank-badge{ display:flex; }
-.top-rated-mode .juice-card,
-.top-rated-mode .fries-card,
-.top-rated-mode .combo-card{ display:none; }
-.top-rated-mode .juice-card.tr-shown,
-.top-rated-mode .fries-card.tr-shown,
-.top-rated-mode .combo-card.tr-shown{ display:flex; }
-
-/* Star Rating Widget */
-.star-rating{
-  display:flex; align-items:center; justify-content:center; gap:3px;
-  margin-top:10px; direction:ltr;
-}
-.star-rating button.star{
-  background:none; border:none; padding:2px; line-height:0;
-  transition: transform .18s var(--ease);
-}
-.star-rating button.star:hover{ transform:scale(1.2); }
-.star-rating svg{ width:18px; height:18px; display:block; }
-.star-rating .star-fill{ fill:var(--gold); stroke:var(--gold-deep); stroke-width:1; }
-.star-rating .star-empty{ fill:none; stroke:#C9C2AC; stroke-width:1.6; }
-.rating-summary{
-  font-size:11.5px; color:var(--text-muted); margin-top:4px; font-weight:600;
-}
-.juice-card.featured .rating-summary,
-.combo-card .rating-summary,
-.fries-card .rating-summary{ color:#B8C0B0; }
-.rated-thanks{ color:var(--forest); font-weight:700; }
-.combo-card .rated-thanks,
-.fries-card .rating-summary.rated-thanks{ color:var(--gold-light); }
-
-.fries-rating .star-rating{ justify-content:flex-start; margin-top:8px; }
-.fries-rating{ margin-top:6px; }
-
-.combo-rating{ margin-top:12px; }
-
 /* Item photos */
 .item-photo{
   width:100%; aspect-ratio:1/1; border-radius:20px; overflow:hidden;
@@ -658,8 +573,6 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   display:inline-block; font-weight:700; color:var(--white); background:var(--forest);
   padding:8px 20px; border-radius:999px; font-size:15px;
 }
-.icecrava-text .star-rating{ justify-content:flex-start; }
-.icecrava-text .rating-summary{ text-align:left; }
 
 /* Fries */
 .fries { 
@@ -902,10 +815,6 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .icecrava-card{ flex-direction:column; text-align:center; padding:32px 24px; }
   .icecrava-text p{ max-width:none; }
   .icecrava-icon{ width:130px; height:130px; }
-  .icecrava-text .star-rating{ justify-content:center; }
-
-  .section-head-row{ flex-direction:column; align-items:flex-start; }
-  .top-rated-btn{ align-self:flex-start; }
 }
 
 @media (max-width: 420px){
@@ -932,8 +841,6 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .item-photo-fries{ width:52px; height:52px; }
   .fries-card{ gap:12px; padding:14px 16px; }
   .icecrava-icon{ width:110px; height:110px; }
-
-  .star-rating svg{ width:15px; height:15px; }
 }
 
 html, body {
@@ -1071,17 +978,10 @@ html, body {
 <!-- ================= JUICES ================= -->
 <section class="juices" id="juices">
   <div class="section-inner">
-    <div class="section-head-row">
-      <div class="section-head">
-        <p class="kicker reveal-up">تازە · سروشتی · بەبێ شەکری زیادە</p>
-        <h2 class="section-title reveal-up">شەربەتی میوە</h2>
-        <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
-      </div>
-      <button class="top-rated-btn dark reveal-up" data-scope="juices" aria-pressed="false">
-        <span class="trophy">🏆</span>
-        <span class="tr-label-off">باشترینەکان</span>
-        <span class="tr-label-on">هەموو ئایتمەکان</span>
-      </button>
+    <div class="section-head">
+      <p class="kicker reveal-up">تازە · سروشتی · بەبێ شەکری زیادە</p>
+      <h2 class="section-title reveal-up">شەربەتی میوە</h2>
+      <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
     </div>
 
     <!-- دوگمەکانی جیاکردنەوە (Tabs) -->
@@ -1094,39 +994,39 @@ html, body {
     <!-- Subsection 1: Mix Fruit Juices -->
     <div class="juice-category active" id="mix-juices">
       <div class="juice-grid">
-        <article class="juice-card" data-item-id="mix-01"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="mix-01"></div></article>
-        <article class="juice-card" data-item-id="mix-02"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="mix-02"></div></article>
-        <article class="juice-card" data-item-id="mix-03"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span><div class="star-rating" data-item-id="mix-03"></div></article>
-        <article class="juice-card" data-item-id="mix-04"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>میکسی مانگۆ و پرتەقاڵ</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="mix-04"></div></article>
-        <article class="juice-card" data-item-id="mix-05"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-05.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>میکسی سێو و کیوی</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="mix-05"></div></article>
-        <article class="juice-card" data-item-id="mix-06"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-06.jpg" alt="میکسی ئەناناس و مانگۆ" loading="lazy"></div><h4>میکسی ئەناناس و مانگۆ</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="mix-06"></div></article>
-        <article class="juice-card" data-item-id="mix-07"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-07.jpg" alt="میکسی هەنار و سێو" loading="lazy"></div><h4>میکسی هەنار و سێو</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="mix-07"></div></article>
-        <article class="juice-card" data-item-id="mix-08"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-08.jpg" alt="میکسی بەتیخ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی بەتیخ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span><div class="star-rating" data-item-id="mix-08"></div></article>
-        <article class="juice-card" data-item-id="mix-09"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-09.jpg" alt="میکسی گوێز و مۆز" loading="lazy"></div><h4>میکسی گوێز و مۆز</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="mix-09"></div></article>
-        <article class="juice-card featured" data-item-id="mix-15"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-15.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>تایبەتی کڕاڤە — میکسی گەرمسێری</h4><span class="price">٤٠٠٠ د.ع</span><div class="star-rating" data-item-id="mix-15"></div></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>میکسی مانگۆ و پرتەقاڵ</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-05.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>میکسی سێو و کیوی</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-06.jpg" alt="میکسی ئەناناس و مانگۆ" loading="lazy"></div><h4>میکسی ئەناناس و مانگۆ</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-07.jpg" alt="میکسی هەنار و سێو" loading="lazy"></div><h4>میکسی هەنار و سێو</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-08.jpg" alt="میکسی بەتیخ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی بەتیخ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-09.jpg" alt="میکسی گوێز و مۆز" loading="lazy"></div><h4>میکسی گوێز و مۆز</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card featured"><div class="item-photo"><img src="images/juice/juice-15.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>تایبەتی کڕاڤە — میکسی گەرمسێری</h4><span class="price">٤٠٠٠ د.ع</span></article>
       </div>
     </div>
 
     <!-- Subsection 2: Pure Fruit Juices -->
     <div class="juice-category" id="pure-juices">
       <div class="juice-grid">
-        <article class="juice-card" data-item-id="pure-01"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span><div class="star-rating" data-item-id="pure-01"></div></article>
-        <article class="juice-card" data-item-id="pure-02"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="pure-02"></div></article>
-        <article class="juice-card" data-item-id="pure-03"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span><div class="star-rating" data-item-id="pure-03"></div></article>
-        <article class="juice-card" data-item-id="pure-04"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-13.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span><div class="star-rating" data-item-id="pure-04"></div></article>
-        <article class="juice-card" data-item-id="pure-05"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/juice-14.jpg" alt="شەربەتی بەتیخ" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span><div class="star-rating" data-item-id="pure-05"></div></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-13.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-14.jpg" alt="شەربەتی بەتیخ" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
       </div>
     </div>
 
     <!-- Subsection 3: Milkshakes -->
     <div class="juice-category" id="milkshakes">
       <div class="juice-grid">
-        <article class="juice-card" data-item-id="shake-01"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/shake-01.jpg" alt="Banana Shake" loading="lazy"></div><h4>Banana Shake</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="shake-01"></div></article>
-        <article class="juice-card" data-item-id="shake-02"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/shake-02.jpg" alt="Strawberry Shake" loading="lazy"></div><h4>Strawberry Shake</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="shake-02"></div></article>
-        <article class="juice-card" data-item-id="shake-03"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/shake-03.jpg" alt="Mango Shake" loading="lazy"></div><h4>Mango Shake</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="shake-03"></div></article>
-        <article class="juice-card" data-item-id="shake-04"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/shake-04.jpg" alt="Pineapple Shake" loading="lazy"></div><h4>Pineapple Shake</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="shake-04"></div></article>
-        <article class="juice-card" data-item-id="shake-05"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/shake-05.jpg" alt="Mixed Berry Shake" loading="lazy"></div><h4>Mixed Berry Shake</h4><span class="price">٤٠٠٠ د.ع</span><div class="star-rating" data-item-id="shake-05"></div></article>
-        <article class="juice-card" data-item-id="shake-06"><span class="rank-badge"></span><div class="item-photo"><img src="images/juice/shake-06.jpg" alt="Kiwi Shake" loading="lazy"></div><h4>Kiwi Shake</h4><span class="price">٣٥٠٠ د.ع</span><div class="star-rating" data-item-id="shake-06"></div></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-01.jpg" alt="Banana Shake" loading="lazy"></div><h4>Banana Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-02.jpg" alt="Strawberry Shake" loading="lazy"></div><h4>Strawberry Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-03.jpg" alt="Mango Shake" loading="lazy"></div><h4>Mango Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-04.jpg" alt="Pineapple Shake" loading="lazy"></div><h4>Pineapple Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-05.jpg" alt="Mixed Berry Shake" loading="lazy"></div><h4>Mixed Berry Shake</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-06.jpg" alt="Kiwi Shake" loading="lazy"></div><h4>Kiwi Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
       </div>
     </div>
 
@@ -1136,55 +1036,42 @@ html, body {
 <!-- ================= CRAVA COMBO ================= -->
 <section class="combos" id="combos">
   <div class="section-inner">
-    <div class="section-head-row">
-      <div class="section-head light">
-        <p class="kicker reveal-up">تامی کامڵ · ئۆفەری تایبەت</p>
-        <h2 class="section-title reveal-up">کڕاڤە کۆمبۆ</h2>
-        <p class="section-desc reveal-up">تێکەڵەی زێڕینی پەتاتەی گەرم و شەربەتی میوەی فرێش بە نرخی تایبەت.</p>
-      </div>
-      <button class="top-rated-btn dark reveal-up" data-scope="combos" aria-pressed="false">
-        <span class="trophy">🏆</span>
-        <span class="tr-label-off">باشترینەکان</span>
-        <span class="tr-label-on">هەموو ئایتمەکان</span>
-      </button>
+    <div class="section-head light">
+      <p class="kicker reveal-up">تامی کامڵ · ئۆفەری تایبەت</p>
+      <h2 class="section-title reveal-up">کڕاڤە کۆمبۆ</h2>
+      <p class="section-desc reveal-up">تێکەڵەی زێڕینی پەتاتەی گەرم و شەربەتی میوەی فرێش بە نرخی تایبەت.</p>
     </div>
 
     <div class="combo-grid">
-      <article class="combo-card reveal-up" data-item-id="combo-01">
-        <span class="rank-badge"></span>
+      <article class="combo-card reveal-up">
         <div class="combo-img">
           <img src="combo-01.jpg" alt="کۆمبۆی کلاسیک" loading="lazy">
         </div>
         <h3>کۆمبۆی کلاسیک</h3>
         <p>پەتاتەی کلاسیکی گەرم + شەربەتی پرتەقاڵی تازە + ۱ سۆس بەپێی ئارەزوو</p>
-        <div class="star-rating combo-rating" data-item-id="combo-01"></div>
         <div class="combo-footer">
           <span class="combo-price">٤,٠٠٠ د.ع</span>
         </div>
       </article>
 
-      <article class="combo-card popular reveal-up delay-1" data-item-id="combo-02">
+      <article class="combo-card popular reveal-up delay-1">
         <span class="combo-badge">پڕفرۆشترین</span>
-        <span class="rank-badge"></span>
         <div class="combo-img">
           <img src="combo-02.jpg" alt="کۆمبۆی تایبەتی کڕاڤە" loading="lazy">
         </div>
         <h3>کۆمبۆی تایبەتی کڕاڤە</h3>
         <p>پەتاتەی پەنیری گەرم + میکسی گەرمسێری کڕاڤە + ۲ سۆسی تایبەت</p>
-        <div class="star-rating combo-rating" data-item-id="combo-02"></div>
         <div class="combo-footer">
           <span class="combo-price">٦,٥٠٠ د.ع</span>
         </div>
       </article>
 
-      <article class="combo-card reveal-up delay-2" data-item-id="combo-03">
-        <span class="rank-badge"></span>
+      <article class="combo-card reveal-up delay-2">
         <div class="combo-img">
           <img src="combo-03.jpg" alt="کۆمبۆی خێزانی" loading="lazy">
         </div>
         <h3>کۆمبۆی دووانە</h3>
         <p>۲ پەتاتەی گەورە (تایبەت) + ۲ شەربەتی میکسی میوە + ٣ سۆس</p>
-        <div class="star-rating combo-rating" data-item-id="combo-03"></div>
         <div class="combo-footer">
           <span class="combo-price">١١,٥٠٠ د.ع</span>
         </div>
@@ -1223,7 +1110,6 @@ html, body {
         <h3>ئایسکڕیمی کڕاڤە</h3>
         <p>کرێمی سارد و نەرم, تێکەڵ لەگەڵ تامی میوەی تازە و تامی تایبەتی کڕاڤە. کۆتایی خۆشی ژەمەکەت.</p>
         <span class="price">٣٥٠٠ د.ع</span>
-        <div class="star-rating" data-item-id="icecrava-01"></div>
       </div>
     </div>
   </div>
@@ -1246,17 +1132,10 @@ html, body {
   <div class="hero-glow glow-gold fries-glow" aria-hidden="true"></div>
 
   <div class="section-inner">
-    <div class="section-head-row">
-      <div class="section-head">
-        <p class="kicker reveal-up">ترسکە · گەرم · تازە سرخکراو</p>
-        <h2 class="section-title reveal-up">پەتاتەی کڕاڤە</h2>
-        <p class="section-desc reveal-up">٥ جۆری تایبەت, هەموویان تازە دەسرخرێن دوای داواکردن، بە دوو قەبارەی جیاواز.</p>
-      </div>
-      <button class="top-rated-btn reveal-up" data-scope="fries" aria-pressed="false">
-        <span class="trophy">🏆</span>
-        <span class="tr-label-off">باشترینەکان</span>
-        <span class="tr-label-on">هەموو ئایتمەکان</span>
-      </button>
+    <div class="section-head">
+      <p class="kicker reveal-up">ترسکە · گەرم · تازە سرخکراو</p>
+      <h2 class="section-title reveal-up">پەتاتەی کڕاڤە</h2>
+      <p class="section-desc reveal-up">٥ جۆری تایبەت, هەموویان تازە دەسرخرێن دوای داواکردن، بە دوو قەبارەی جیاواز.</p>
     </div>
 
     <div class="fries-layout">
@@ -1265,13 +1144,11 @@ html, body {
       </div>
 
       <div class="fries-cards">
-        <article class="fries-card reveal-up" data-item-id="fries-01">
-          <span class="rank-badge"></span>
+        <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-01.jpg" alt="پەتاتەی کلاسیک" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی کلاسیک</h4>
             <p>پەتاتەی ترسکەی سادە لەگەڵ خوێی تایبەت</p>
-            <div class="star-rating fries-rating" data-item-id="fries-01"></div>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
@@ -1279,13 +1156,11 @@ html, body {
           </div>
         </article>
 
-        <article class="fries-card reveal-up" data-item-id="fries-02">
-          <span class="rank-badge"></span>
+        <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-02.jpg" alt="پەتاتەی پەنیر" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی پەنیر</h4>
             <p>داپۆشراو بە سۆسی پەنیری گەرم</p>
-            <div class="star-rating fries-rating" data-item-id="fries-02"></div>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
@@ -1293,13 +1168,11 @@ html, body {
           </div>
         </article>
 
-        <article class="fries-card reveal-up" data-item-id="fries-03">
-          <span class="rank-badge"></span>
+        <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-03.jpg" alt="پەتاتەی تیخ" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی تیخ</h4>
             <p>بەهاراتی تیژ بۆ ئەوانەی حەز لە تام دەکەن</p>
-            <div class="star-rating fries-rating" data-item-id="fries-03"></div>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
@@ -1307,13 +1180,11 @@ html, body {
           </div>
         </article>
 
-        <article class="fries-card reveal-up" data-item-id="fries-04">
-          <span class="rank-badge"></span>
+        <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-04.jpg" alt="پەتاتەی سیر و مایۆنێز" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی سیر و مایۆنێز</h4>
             <p>تامێکی کرێمی لەگەڵ بۆنی سیری تازە</p>
-            <div class="star-rating fries-rating" data-item-id="fries-04"></div>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
@@ -1321,13 +1192,11 @@ html, body {
           </div>
         </article>
 
-        <article class="fries-card reveal-up featured" data-item-id="fries-05">
-          <span class="rank-badge"></span>
+        <article class="fries-card reveal-up featured">
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-05.jpg" alt="پەتاتەی تایبەتی کڕاڤە" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی تایبەتی کڕاڤە</h4>
             <p>تێکەڵەی هەموو سۆسەکان + پارچە گۆشتی تایبەت</p>
-            <div class="star-rating fries-rating" data-item-id="fries-05"></div>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٥٠٠ د.ع</span></div>
@@ -1432,10 +1301,7 @@ html, body {
   // هێنانی Firebase لە ڕێگەی CDN
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
-  import {
-    getFirestore, collection, getDocs, doc, getDoc, setDoc,
-    runTransaction, onSnapshot
-  } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   // زانیارییەکانی پڕۆژەکەت لە فایربەیس
   const firebaseConfig = {
@@ -1452,180 +1318,6 @@ html, body {
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const db = getFirestore(app);
-
-  const RATINGS_COLLECTION = "itemRatings";
-  const VOTED_STORAGE_KEY = "crava_voted_items_v1";
-
-  // خوێندنەوەی لیستی ئایتمە دەنگدراوەکان لەم device / browser
-  function getVotedMap() {
-    try {
-      return JSON.parse(localStorage.getItem(VOTED_STORAGE_KEY) || "{}");
-    } catch (e) {
-      return {};
-    }
-  }
-  function setVoted(itemId, value) {
-    const map = getVotedMap();
-    map[itemId] = value;
-    try { localStorage.setItem(VOTED_STORAGE_KEY, JSON.stringify(map)); } catch (e) {}
-  }
-
-  // دروستکردنی ئایکۆنی ئەستێرەیەک بە SVG
-  function starSVG(filled) {
-    if (filled) {
-      return '<svg viewBox="0 0 24 24"><polygon class="star-fill" points="12,2 15,9 22,9.5 16.5,14.2 18.3,21 12,17.2 5.7,21 7.5,14.2 2,9.5 9,9"/></svg>';
-    }
-    return '<svg viewBox="0 0 24 24"><polygon class="star-empty" points="12,2 15,9 22,9.5 16.5,14.2 18.3,21 12,17.2 5.7,21 7.5,14.2 2,9.5 9,9"/></svg>';
-  }
-
-  // دروستکردنی HTML ی ناوی ستارەکان بۆ هەر بازنەیەک
-  function buildStarsHTML(itemId, currentAvg, userVoted) {
-    const roundedAvg = Math.round(currentAvg || 0);
-    let starsHtml = '<div class="star-rating" data-item-id="' + itemId + '">';
-    for (let i = 1; i <= 5; i++) {
-      starsHtml += '<button type="button" class="star" data-value="' + i + '" aria-label="' + i + ' ئەستێرە">' + starSVG(i <= roundedAvg) + '</button>';
-    }
-    starsHtml += '</div>';
-    return starsHtml;
-  }
-
-  function formatSummary(avg, count, voted) {
-    if (count === 0) {
-      return '<span class="rating-summary">یەکەم کەس بە کە دەنگ دەدات!</span>';
-    }
-    const avgStr = avg.toFixed(1);
-    const base = '⭐ ' + avgStr + ' (' + count + ' دەنگ)';
-    if (voted) {
-      return '<span class="rating-summary rated-thanks">' + base + ' · سوپاس بۆ ڕەیتینگەکەت 🙏</span>';
-    }
-    return '<span class="rating-summary">' + base + '</span>';
-  }
-
-  // کاش بۆ هەڵگرتنی داتای ڕەیتینگ لە کلاینت بۆ بەکارهێنان لە ڕیزبەندی "باشترینەکان"
-  const ratingsCache = {};
-
-  // دامەزراندنی ویجیتی ئەستێرەکان بۆ هەر ئایتمێک
-  function initStarWidget(container) {
-    const itemId = container.getAttribute('data-item-id');
-    if (!itemId) return;
-
-    const votedMap = getVotedMap();
-    const alreadyVoted = itemId in votedMap;
-
-    const docRef = doc(db, RATINGS_COLLECTION, itemId);
-
-    // خوێندنەوەی سەرەتایی
-    getDoc(docRef).then((snap) => {
-      let avg = 0, count = 0, sum = 0;
-      if (snap.exists()) {
-        const data = snap.data();
-        count = data.count || 0;
-        sum = data.sum || 0;
-        avg = count > 0 ? sum / count : 0;
-      }
-      ratingsCache[itemId] = { avg, count };
-      renderWidget(container, itemId, avg, alreadyVoted);
-      const summaryHolder = container.parentElement.querySelector('.rating-summary-holder-' + itemId);
-    }).catch(() => {
-      renderWidget(container, itemId, 0, alreadyVoted);
-    });
-
-    // گوێگرتن لە گۆڕانکارییەکانی هەموو کاتی (بۆ هەموو بەکارهێنەران)
-    onSnapshot(docRef, (snap) => {
-      let avg = 0, count = 0, sum = 0;
-      if (snap.exists()) {
-        const data = snap.data();
-        count = data.count || 0;
-        sum = data.sum || 0;
-        avg = count > 0 ? sum / count : 0;
-      }
-      ratingsCache[itemId] = { avg, count };
-      const voted = itemId in getVotedMap();
-      updateWidgetDisplay(container, itemId, avg, count, voted);
-    });
-  }
-
-  function renderWidget(container, itemId, avg, voted) {
-    container.innerHTML = buildStarsHTML(itemId, avg, voted);
-    attachStarEvents(container, itemId);
-    insertSummary(container, avg, ratingsCache[itemId] ? ratingsCache[itemId].count : 0, voted);
-  }
-
-  function updateWidgetDisplay(container, itemId, avg, count, voted) {
-    // نوێکردنەوەی پڕبوونی ئەستێرەکان
-    const stars = container.querySelectorAll('.star');
-    const roundedAvg = Math.round(avg || 0);
-    stars.forEach((btn) => {
-      const val = parseInt(btn.getAttribute('data-value'), 10);
-      btn.innerHTML = starSVG(val <= roundedAvg);
-    });
-    insertSummary(container, avg, count, voted);
-  }
-
-  function insertSummary(container, avg, count, voted) {
-    let summaryEl = container.nextElementSibling;
-    if (!summaryEl || !summaryEl.classList || !summaryEl.classList.contains('rating-summary')) {
-      summaryEl = document.createElement('span');
-      summaryEl.className = 'rating-summary';
-      container.insertAdjacentElement('afterend', summaryEl);
-    }
-    const temp = document.createElement('div');
-    temp.innerHTML = formatSummary(avg, count, voted);
-    const newSpan = temp.firstElementChild;
-    summaryEl.className = newSpan.className;
-    summaryEl.innerHTML = newSpan.innerHTML;
-  }
-
-  function attachStarEvents(container, itemId) {
-    const stars = container.querySelectorAll('.star');
-    stars.forEach((btn) => {
-      btn.addEventListener('mouseenter', () => {
-        const hoverVal = parseInt(btn.getAttribute('data-value'), 10);
-        stars.forEach((s) => {
-          const v = parseInt(s.getAttribute('data-value'), 10);
-          s.innerHTML = starSVG(v <= hoverVal);
-        });
-      });
-      btn.addEventListener('mouseleave', () => {
-        const cached = ratingsCache[itemId] || { avg: 0 };
-        const roundedAvg = Math.round(cached.avg || 0);
-        stars.forEach((s) => {
-          const v = parseInt(s.getAttribute('data-value'), 10);
-          s.innerHTML = starSVG(v <= roundedAvg);
-        });
-      });
-      btn.addEventListener('click', async () => {
-        const value = parseInt(btn.getAttribute('data-value'), 10);
-        const votedMap = getVotedMap();
-        const previousVote = votedMap[itemId];
-
-        const docRef = doc(db, RATINGS_COLLECTION, itemId);
-        try {
-          await runTransaction(db, async (transaction) => {
-            const snap = await transaction.get(docRef);
-            let count = 0, sum = 0;
-            if (snap.exists()) {
-              const data = snap.data();
-              count = data.count || 0;
-              sum = data.sum || 0;
-            }
-            if (previousVote !== undefined) {
-              // گۆڕینی دەنگی پێشوو بۆ دەنگی نوێ
-              sum = sum - previousVote + value;
-            } else {
-              // دەنگدانێکی نوێ
-              sum = sum + value;
-              count = count + 1;
-            }
-            transaction.set(docRef, { sum, count }, { merge: true });
-          });
-          setVoted(itemId, value);
-        } catch (err) {
-          console.error("هەڵە لە تۆمارکردنی دەنگ:", err);
-        }
-      });
-    });
-  }
 
   // کۆدی کارپێکردنی مێنیو، تابس و ئەنیمەیشنەکان
   document.addEventListener('DOMContentLoaded', () => {
@@ -1711,113 +1403,6 @@ html, body {
         el.style.transitionDelay = `${Math.min(i * 60, 480)}ms`;
       });
     });
-
-    /* دامەزراندنی هەموو ویجیتەکانی ئەستێرە */
-    document.querySelectorAll('.star-rating[data-item-id]').forEach(initStarWidget);
-
-    /* ================= TOP RATED (باشترینەکان) ================= */
-    const topRatedBtns = document.querySelectorAll('.top-rated-btn');
-
-    function getCardsForScope(scope) {
-      if (scope === 'juices') {
-        // تەنها بۆ ئەو بەشە جۆرەی ئێستا چالاکە
-        const activeCategory = document.querySelector('.juice-category.active');
-        return activeCategory ? Array.from(activeCategory.querySelectorAll('.juice-card')) : [];
-      }
-      if (scope === 'combos') {
-        return Array.from(document.querySelectorAll('.combo-card'));
-      }
-      if (scope === 'fries') {
-        return Array.from(document.querySelectorAll('.fries-card'));
-      }
-      return [];
-    }
-
-    function getScopeContainer(scope) {
-      if (scope === 'juices') return document.getElementById('juices');
-      if (scope === 'combos') return document.getElementById('combos');
-      if (scope === 'fries') return document.getElementById('fries');
-      return null;
-    }
-
-    function clearRanking(cards) {
-      cards.forEach(card => {
-        card.classList.remove('tr-shown');
-        const badge = card.querySelector('.rank-badge');
-        if (badge) {
-          badge.textContent = '';
-          badge.className = 'rank-badge';
-        }
-      });
-    }
-
-    function applyRanking(scope) {
-      const cards = getCardsForScope(scope);
-      const withData = cards.map(card => {
-        const id = card.getAttribute('data-item-id');
-        const data = ratingsCache[id] || { avg: 0, count: 0 };
-        return { card, avg: data.avg || 0, count: data.count || 0 };
-      });
-
-      withData.sort((a, b) => {
-        if (b.avg !== a.avg) return b.avg - a.avg;
-        return b.count - a.count;
-      });
-
-      const topN = withData.slice(0, 5);
-      clearRanking(cards);
-
-      topN.forEach((entry, index) => {
-        entry.card.classList.add('tr-shown');
-        const badge = entry.card.querySelector('.rank-badge');
-        if (badge) {
-          badge.textContent = '#' + (index + 1);
-          if (index === 0) badge.classList.add('gold');
-          else if (index === 1) badge.classList.add('silver');
-          else if (index === 2) badge.classList.add('bronze');
-        }
-      });
-    }
-
-    topRatedBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const scope = btn.getAttribute('data-scope');
-        const container = getScopeContainer(scope);
-        if (!container) return;
-
-        const isActive = btn.classList.toggle('active');
-        btn.setAttribute('aria-pressed', String(isActive));
-
-        if (isActive) {
-          container.classList.add('top-rated-mode');
-          // دواخستنێکی بچووک بۆ دڵنیابوون لە هێنانی داتای ڕەیتینگ
-          applyRanking(scope);
-        } else {
-          container.classList.remove('top-rated-mode');
-          const cards = getCardsForScope(scope);
-          clearRanking(cards);
-        }
-      });
-    });
-
-    // کاتێک تابی جۆرێکی نوێی شەربەت هەڵدەبژێردرێت، ئەگەر دۆخی "باشترینەکان" چالاک بێت، دووبارە ڕیزیان بکەرەوە
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const juicesTopBtn = document.querySelector('.top-rated-btn[data-scope="juices"]');
-        if (juicesTopBtn && juicesTopBtn.classList.contains('active')) {
-          setTimeout(() => applyRanking('juices'), 50);
-        }
-      });
-    });
-
-    // نوێکردنەوەی خۆکاری ڕیزبەندی کاتێک داتای نوێی ڕەیتینگ دێت (بۆ ئەو بەشانەی لە دۆخی باشترینەکان دان)
-    const refreshInterval = setInterval(() => {
-      topRatedBtns.forEach(btn => {
-        if (btn.classList.contains('active')) {
-          applyRanking(btn.getAttribute('data-scope'));
-        }
-      });
-    }, 4000);
   });
 </script>
 </body>
