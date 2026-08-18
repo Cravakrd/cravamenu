@@ -1015,30 +1015,30 @@ html, body {
     <!-- Subsection 2: Pure Fruit Juices -->
     <div class="juice-category" id="pure-juices">
       <div class="juice-grid">
-        <article class="juice-card"><div class="item-photo"><img src="orange.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="hanar.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="lemo.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="sew.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="wmelon.jpg" alt="شەربەتی شوتی" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="orange.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="hanar.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="lemo.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="sew.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="wmelon.jpg" alt="شەربەتی شوتی" loading="lazy"></div><h4>شەربەتی شوتی</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
-          <article class="juice-card"><div class="item-photo"><img src="melon.jpg" alt="شەربەتی کاڵەک" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
-            <article class="juice-card"><div class="item-photo"><img src="ananas.jpg" alt="شەربەتی ئەناناس" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
-              <article class="juice-card"><div class="item-photo"><img src="stberry.jpg" alt="شەربەتی شلک" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+          <article class="juice-card"><div class="item-photo"><img src="melon.jpg" alt="شەربەتی کاڵەک" loading="lazy"></div><h4>شەربەتی کاڵەک</h4><span class="price">٣٠٠٠ د.ع</span></article>
+            <article class="juice-card"><div class="item-photo"><img src="ananas.jpg" alt="شەربەتی ئەناناس" loading="lazy"></div><h4>شەربەتی ئەناناس</h4><span class="price">٤٠٠٠ د.ع</span></article>
+              <article class="juice-card"><div class="item-photo"><img src="stberry.jpg" alt="شەربەتی شلک" loading="lazy"></div><h4>شەربەتی شلک</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
-                <article class="juice-card"><div class="item-photo"><img src="grape.jpg" alt="شەربەتی ترێ" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+                <article class="juice-card"><div class="item-photo"><img src="grape.jpg" alt="شەربەتی ترێ" loading="lazy"></div><h4>شەربەتی ترێ</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
-                  <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
-
-
+                  <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شیر مۆز</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
 
-                      <article class="juice-card"><div class="item-photo"><img src="gezar.jpg" alt="شەربەتی گێزار" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
 
-       <article class="juice-card"><div class="item-photo"><img src="mango.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
 
-          <article class="juice-card"><div class="item-photo"><img src="kiwi.jpg" alt="شەربەتی کیوی" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+                      <article class="juice-card"><div class="item-photo"><img src="gezar.jpg" alt="شەربەتی گێزەر" loading="lazy"></div><h4>شەربەتی گێزەر</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
-         <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+       <article class="juice-card"><div class="item-photo"><img src="mango.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی مانگۆ</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+          <article class="juice-card"><div class="item-photo"><img src="kiwi.jpg" alt="شەربەتی کیوی" loading="lazy"></div><h4>شەربەتی کیوی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+
+         <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>یمۆنادی بەرازیلی</h4><span class="price">٣٥٠٠ د.ع</span></article>
       </div>
     </div>
 
