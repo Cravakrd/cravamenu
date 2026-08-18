@@ -1025,6 +1025,11 @@ html, body {
             <article class="juice-card"><div class="item-photo"><img src="ananas.jpg" alt="شەربەتی ئەناناس" loading="lazy"></div><h4>شەربەتی ئەناناس</h4><span class="price">٤٠٠٠ د.ع</span></article>
               <article class="juice-card"><div class="item-photo"><img src="stberry.jpg" alt="شەربەتی شلک" loading="lazy"></div><h4>شەربەتی شلک</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
+
+                <article class="juice-card"><div class="item-photo"><img src="xox.jpg" alt="شەربەتی خۆخ" loading="lazy"></div><h4>شەربەتی خۆخ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+
+
+
                 <article class="juice-card"><div class="item-photo"><img src="grape.jpg" alt="شەربەتی ترێ" loading="lazy"></div><h4>شەربەتی ترێ</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
                   <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شیر مۆز</h4><span class="price">٣٠٠٠ د.ع</span></article>
