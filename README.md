@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ckb" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -398,6 +398,9 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .juice-grid{
   display:grid; grid-template-columns:repeat(5,1fr); gap:18px;
 }
+.fruit-bowl-grid{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
+}
 .juice-card{
   position:relative; isolation:isolate; overflow:hidden;
   background: var(--glass-light-fill);
@@ -767,6 +770,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 @media (max-width: 980px){
   .quick-nav-cards { grid-template-columns: repeat(2, 1fr); }
   .juice-grid{ grid-template-columns:repeat(3,1fr); }
+  .fruit-bowl-grid{ grid-template-columns:repeat(2,1fr); }
   .combo-grid{ grid-template-columns: 1fr; }
   .sauce-list{ grid-template-columns:repeat(3,1fr); }
   .footer-inner{ grid-template-columns:1fr 1fr; }
@@ -791,7 +795,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 
   .fries-layout{ grid-template-columns:1fr; }
   
-  .juice-grid {
+  .juice-grid, .fruit-bowl-grid {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 12px;
   }
@@ -822,7 +826,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   .btn{ padding:14px 22px; font-size:14px; }
   .quick-nav-cards { grid-template-columns: 1fr; }
   
-  .juice-grid {
+  .juice-grid, .fruit-bowl-grid {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 8px;
   }
@@ -989,12 +993,13 @@ html, body {
       <button class="tab-btn active" data-target="mix-juices">میکسی میوە</button>
       <button class="tab-btn" data-target="pure-juices">شەربەتی میوە</button>
       <button class="tab-btn" data-target="milkshakes">میلکشەیک</button>
+      <button class="tab-btn" data-target="fruit-bowls">قاپی میوە</button>
     </div>
 
     <!-- Subsection 1: Mix Fruit Juices -->
     <div class="juice-category active" id="mix-juices">
       <div class="juice-grid">
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-01.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="orange.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>میکسی مانگۆ و پرتەقاڵ</h4><span class="price">٣٥٠٠ د.ع</span></article>
@@ -1010,11 +1015,30 @@ html, body {
     <!-- Subsection 2: Pure Fruit Juices -->
     <div class="juice-category" id="pure-juices">
       <div class="juice-grid">
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-10.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-11.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-12.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-13.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-14.jpg" alt="شەربەتی بەتیخ" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="orange.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="hanar.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="lemo.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="sew.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="wmelon.jpg" alt="شەربەتی شوتی" loading="lazy"></div><h4>شەربەتی بەتیخ</h4><span class="price">٢٠٠٠ د.ع</span></article>
+
+          <article class="juice-card"><div class="item-photo"><img src="melon.jpg" alt="شەربەتی کاڵەک" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+            <article class="juice-card"><div class="item-photo"><img src="ananas.jpg" alt="شەربەتی ئەناناس" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+              <article class="juice-card"><div class="item-photo"><img src="stberry.jpg" alt="شەربەتی شلک" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+
+                <article class="juice-card"><div class="item-photo"><img src="grape.jpg" alt="شەربەتی ترێ" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+
+                  <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+
+
+
+
+                      <article class="juice-card"><div class="item-photo"><img src="gezar.jpg" alt="شەربەتی گێزار" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+
+       <article class="juice-card"><div class="item-photo"><img src="mango.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+
+          <article class="juice-card"><div class="item-photo"><img src="kiwi.jpg" alt="شەربەتی کیوی" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
+
+         <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٢٥٠٠ د.ع</span></article>
       </div>
     </div>
 
@@ -1027,6 +1051,16 @@ html, body {
         <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-04.jpg" alt="Pineapple Shake" loading="lazy"></div><h4>Pineapple Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-05.jpg" alt="Mixed Berry Shake" loading="lazy"></div><h4>Mixed Berry Shake</h4><span class="price">٤٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-06.jpg" alt="Kiwi Shake" loading="lazy"></div><h4>Kiwi Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+      </div>
+    </div>
+
+    <!-- Subsection 4: Fruit Bowls (قاپی میوە) -->
+    <div class="juice-category" id="fruit-bowls">
+      <div class="fruit-bowl-grid">
+        <article class="juice-card"><div class="item-photo"><img src="images/fruit-bowl/bowl-small.jpg" alt="قاپی میوە - بچووک" loading="lazy"></div><h4>قاپی میوە (بچووک)</h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/fruit-bowl/bowl-med.jpg" alt="قاپی میوە - مامناوەند" loading="lazy"></div><h4>قاپی میوە (مامناوەند)</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="images/fruit-bowl/bowl-large.jpg" alt="قاپی میوە - گەورە" loading="lazy"></div><h4>قاپی میوە (گەورە)</h4><span class="price">٤٥٠٠ د.ع</span></article>
+        <article class="juice-card featured"><div class="item-photo"><img src="images/fruit-bowl/bowl-special.jpg" alt="قاپی میوەی شاهانەی کڕاڤە" loading="lazy"></div><h4>قاپی میوەی شاهانەی کڕاڤە</h4><span class="price">٥٥٠٠ د.ع</span></article>
       </div>
     </div>
 
