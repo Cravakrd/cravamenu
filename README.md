@@ -901,11 +901,11 @@ html, body {
   <div class="hero-glow glow-gold" aria-hidden="true"></div>
 
   <div class="floaters" aria-hidden="true">
-    <span class="floater f1">🍊</span>
+    <span class="floater f1">🍟</span>
     <span class="floater f2">🍓</span>
     <span class="floater f3">🥝</span>
     <span class="floater f4">🍍</span>
-    <span class="floater f5">🍉</span>
+    <span class="floater f5">🍟</span>
   </div>
 
   <div class="hero-inner">
@@ -916,7 +916,7 @@ html, body {
       بەخێربێن <br>
       <span class="accent-text"> بۆ کڕاڤا </span>
     </h1>
-    <p class="hero-sub reveal-up delay-3">شەربەتی میوەی فرێش، پەتاتەی گەرم و ئۆفەری کڕاڤە کۆمبۆ بە جۆرەها تامی جیاواز تاقی بکەرەوە.</p>
+    <p class="hero-sub reveal-up delay-3">شەربەتی میوەی فرێش و پەتاتەی گەرمی تازە بە جۆرەها تامی جیاواز لەگەڵ CRAVA تاقی بکەرەوە</p>
 
     <div class="hero-actions reveal-up delay-4">
       <a href="#juices" class="btn btn-primary">
