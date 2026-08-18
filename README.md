@@ -1038,7 +1038,7 @@ html, body {
 
           <article class="juice-card"><div class="item-photo"><img src="kiwi.jpg" alt="شەربەتی کیوی" loading="lazy"></div><h4>شەربەتی کیوی</h4><span class="price">٣٠٠٠ د.ع</span></article>
 
-         <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>یمۆنادی بەرازیلی</h4><span class="price">٣٥٠٠ د.ع</span></article>
+         <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>لیمۆنادی بەرازیلی</h4><span class="price">٣٥٠٠ د.ع</span></article>
       </div>
     </div>
 
