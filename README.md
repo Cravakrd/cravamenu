@@ -934,7 +934,7 @@ html, body {
       </div>
       <div class="quick-card-info">
         <h4>شەربەتی میوە</h4>
-        <p>٢١ جۆر شەربەتی تازە</p>
+        <p></p>
       </div>
     </a>
     <a href="#combos" class="quick-card">
@@ -943,7 +943,7 @@ html, body {
       </div>
       <div class="quick-card-info">
         <h4>کڕاڤە کۆمبۆ</h4>
-        <p>مێکسی پەتاتە و شەربەت</p>
+        <p></p>
       </div>
     </a>
     <a href="#icecrava" class="quick-card">
@@ -952,7 +952,7 @@ html, body {
       </div>
       <div class="quick-card-info">
         <h4>ئایسکراڤا</h4>
-        <p>سارد و کرێمی تایبەت</p>
+        <p></p>
       </div>
     </a>
     <a href="#fries" class="quick-card">
@@ -961,7 +961,7 @@ html, body {
       </div>
       <div class="quick-card-info">
         <h4>پەتاتەی گەرم</h4>
-        <p>٥ جۆری ترسکە</p>
+        <p></p>
       </div>
     </a>
   </div>
@@ -983,7 +983,7 @@ html, body {
 <section class="juices" id="juices">
   <div class="section-inner">
     <div class="section-head">
-      <p class="kicker reveal-up">تازە · سروشتی · بەبێ شەکری زیادە</p>
+      <p class="kicker reveal-up">تازە · سروشتی ·</p>
       <h2 class="section-title reveal-up">شەربەتی میوە</h2>
       <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
     </div>
