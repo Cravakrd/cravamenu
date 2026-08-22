@@ -942,7 +942,7 @@ html, body {
         🍿
       </div>
       <div class="quick-card-info">
-        <h4>کڕاڤە کۆمبۆ</h4>
+         <img src="ice-icon.jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
         <p></p>
       </div>
     </a>
