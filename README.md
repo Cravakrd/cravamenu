@@ -939,10 +939,10 @@ html, body {
     </a>
     <a href="#combos" class="quick-card">
       <div class="quick-card-icon">
-        🍿
+        <img src="ice-icon.jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
       </div>
       <div class="quick-card-info">
-         <img src="ice-icon.jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
+         
         <p></p>
       </div>
     </a>
