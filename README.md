@@ -1088,7 +1088,7 @@ html, body {
     <div class="combo-grid">
       <article class="combo-card reveal-up">
         <div class="combo-img">
-          <img src="combo1.jpg" alt="کۆمبۆی کلاسیک" loading="lazy">
+          <img src="combo11.jpg" alt="کۆمبۆی کلاسیک" loading="lazy">
         </div>
         <h3> پەتاتە +شەربەتی فرێش</h3>
         <p></p>
@@ -1097,9 +1097,9 @@ html, body {
         </div>
       </article>
 
-      <article class="combo2-card reveal-up delay-2">
+      <article class="combo22-card reveal-up delay-2">
         <div class="combo-img">
-          <img src="combo0.jpg" alt="کۆمبۆی خێزانی" loading="lazy">
+          <img src="combo22.jpg" alt="کۆمبۆی خێزانی" loading="lazy">
         </div>
         <h3>شەربەتی فرێش +میوە </h3>
         <p></p>
