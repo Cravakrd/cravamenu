@@ -961,7 +961,7 @@ html, body {
     </a>
     <a href="#combos" class="quick-card">
       <div class="quick-card-icon">
-        <img src="combo111jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
+        <img src="combo111.jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
       </div>
       <div class="quick-card-info">
           <h4>کڕاڤا کۆمبۆ</h4>
@@ -1007,7 +1007,7 @@ html, body {
     <div class="section-head">
       <p class="kicker reveal-up">تازە · سروشتی ·</p>
       <h2 class="section-title reveal-up">شەربەتی میوە</h2>
-      <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی ڕەسەن دروست دەکرێت.</p>
+      <p class="section-desc reveal-up">جۆرەها شەربەتی میوەی تازە، میکسی تایبەت و میلکشەیك، هەر ڕۆژێک لە میوەی فرێش دروست دەکرێت.</p>
     </div>
 
     <!-- دوگمەکانی جیاکردنەوە (Tabs) -->
