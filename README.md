@@ -1093,11 +1093,11 @@ html, body {
         <h3> پەتاتە +شەربەتی فرێش</h3>
         <p></p>
         <div class="combo-footer">
-          <span class="combo-price">٥,٠٠٠ د.ع</span>
+          <span class="combo1-price">٥,٠٠٠ د.ع</span>
         </div>
       </article>
 
-      <article class="combo-card reveal-up delay-2">
+      <article class="combo2-card reveal-up delay-2">
         <div class="combo-img">
           <img src="combo0.jpg" alt="کۆمبۆی خێزانی" loading="lazy">
         </div>
@@ -1175,7 +1175,7 @@ html, body {
 
       <div class="fries-cards">
         <article class="fries-card reveal-up">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-01.jpg" alt="پەتاتەی کلاسیک" loading="lazy"></div>
+          <div class="item-photo item-photo-fries"><img src="crit.jpg" alt="پەتاتەی کلاسیک" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی کلاسیک</h4>
             <p></p>
