@@ -1021,16 +1021,13 @@ html, body {
     <!-- Subsection 1: Mix Fruit Juices -->
     <div class="juice-category active" id="mix-juices">
       <div class="juice-grid">
-        <article class="juice-card"><div class="item-photo"><img src="orange.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>میکسی کوێستان</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-02.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>میکسی ئەنتیۆکسیدانت</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-03.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی لیمۆ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-04.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>میکسی مانگۆ و پرتەقاڵ</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-05.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>میکسی سێو و کیوی</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-06.jpg" alt="میکسی ئەناناس و مانگۆ" loading="lazy"></div><h4>میکسی ئەناناس و مانگۆ</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-07.jpg" alt="میکسی هەنار و سێو" loading="lazy"></div><h4>میکسی هەنار و سێو</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-08.jpg" alt="میکسی بەتیخ و تووی فەرەنگی" loading="lazy"></div><h4>میکسی بەتیخ و تووی فەرەنگی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/juice-09.jpg" alt="میکسی گوێز و مۆز" loading="lazy"></div><h4>میکسی گوێز و مۆز</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card featured"><div class="item-photo"><img src="images/juice/juice-15.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>تایبەتی کڕاڤە — میکسی گەرمسێری</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="sunshine.jpg" alt="میکسی کوێستان" loading="lazy"></div><h4>کڕاڤا سەنشاین</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="fresh.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>فرێش کڕاڤا</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="matrix.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>کڕاڤا ماتریکس</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="dream.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>کڕاڤا دریم</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="dream.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>کڕاڤا ئەکتیڤ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+  
+        <article class="juice-card featured"><div class="item-photo"><img src="cravamix.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>کڕاڤا میکس</h4><span class="price">٤٠٠٠ د.ع</span></article>
       </div>
     </div>
 
@@ -1050,8 +1047,8 @@ html, body {
         <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شیر مۆز</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="gezar.jpg" alt="شەربەتی گێزەر" loading="lazy"></div><h4>شەربەتی گێزەر</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="mango.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی مانگۆ</h4><span class="price">٤٠٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="kiwi.jpg" alt="شەربەتی کیوی" loading="lazy"></div><h4>شەربەتی کیوی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>لیمۆنادی بەرازیلی</h4><span class="price">٣٥٠٠ د.ع</span></article>
+     
+      
       </div>
     </div>
 
