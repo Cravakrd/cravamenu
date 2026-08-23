@@ -709,7 +709,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   100% { transform: translateX(-50%); }
 }
 [dir="rtl"] .marquee-track{
-  animation-name: marquee-rtl;
+  animation: marquee-rtl 16s linear infinite;
 }
 @keyframes marquee-rtl{
   0% { transform: translateX(0); }
@@ -717,7 +717,14 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 }
 
 /* Footer */
-.site-footer{ background:var(--forest-dark); color:#D9DED4; padding-top:70px; }
+.site-footer{ 
+  background:var(--forest-dark); 
+  color:#D9DED4; 
+  padding-top:70px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 .footer-inner{
   max-width:1240px; margin:0 auto; padding:0 24px 50px;
   display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:40px;
@@ -1020,30 +1027,16 @@ html, body {
         <article class="juice-card"><div class="item-photo"><img src="lemo.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="sew.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="wmelon.jpg" alt="شەربەتی شوتی" loading="lazy"></div><h4>شەربەتی شوتی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-
-          <article class="juice-card"><div class="item-photo"><img src="melon.jpg" alt="شەربەتی کاڵەک" loading="lazy"></div><h4>شەربەتی کاڵەک</h4><span class="price">٣٠٠٠ د.ع</span></article>
-            <article class="juice-card"><div class="item-photo"><img src="ananas.jpg" alt="شەربەتی ئەناناس" loading="lazy"></div><h4>شەربەتی ئەناناس</h4><span class="price">٤٠٠٠ د.ع</span></article>
-              <article class="juice-card"><div class="item-photo"><img src="stberry.jpg" alt="شەربەتی شلک" loading="lazy"></div><h4>شەربەتی شلک</h4><span class="price">٣٠٠٠ د.ع</span></article>
-
-
-                <article class="juice-card"><div class="item-photo"><img src="xox.jpg" alt="شەربەتی خۆخ" loading="lazy"></div><h4>شەربەتی خۆخ</h4><span class="price">٣٠٠٠ د.ع</span></article>
-
-
-
-                <article class="juice-card"><div class="item-photo"><img src="grape.jpg" alt="شەربەتی ترێ" loading="lazy"></div><h4>شەربەتی ترێ</h4><span class="price">٣٠٠٠ د.ع</span></article>
-
-                  <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شیر مۆز</h4><span class="price">٣٠٠٠ د.ع</span></article>
-
-
-
-
-                      <article class="juice-card"><div class="item-photo"><img src="gezar.jpg" alt="شەربەتی گێزەر" loading="lazy"></div><h4>شەربەتی گێزەر</h4><span class="price">٣٠٠٠ د.ع</span></article>
-
-       <article class="juice-card"><div class="item-photo"><img src="mango.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی مانگۆ</h4><span class="price">٤٠٠٠ د.ع</span></article>
-
-          <article class="juice-card"><div class="item-photo"><img src="kiwi.jpg" alt="شەربەتی کیوی" loading="lazy"></div><h4>شەربەتی کیوی</h4><span class="price">٣٠٠٠ د.ع</span></article>
-
-         <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>لیمۆنادی بەرازیلی</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="melon.jpg" alt="شەربەتی کاڵەک" loading="lazy"></div><h4>شەربەتی کاڵەک</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="ananas.jpg" alt="شەربەتی ئەناناس" loading="lazy"></div><h4>شەربەتی ئەناناس</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="stberry.jpg" alt="شەربەتی شلک" loading="lazy"></div><h4>شەربەتی شلک</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="xox.jpg" alt="شەربەتی خۆخ" loading="lazy"></div><h4>شەربەتی خۆخ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="grape.jpg" alt="شەربەتی ترێ" loading="lazy"></div><h4>شەربەتی ترێ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شیر مۆز</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="gezar.jpg" alt="شەربەتی گێزەر" loading="lazy"></div><h4>شەربەتی گێزەر</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="mango.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی مانگۆ</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="kiwi.jpg" alt="شەربەتی کیوی" loading="lazy"></div><h4>شەربەتی کیوی</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="blemo.jpg" alt="لیمۆنادی بەرازیلی" loading="lazy"></div><h4>لیمۆنادی بەرازیلی</h4><span class="price">٣٥٠٠ د.ع</span></article>
       </div>
     </div>
 
@@ -1063,7 +1056,6 @@ html, body {
     <div class="juice-category" id="fruit-bowls">
       <div class="bowl">
         <article class="juice-card"><div class="item-photo"><img src="bowl.jpg" alt="قاپی میوە - بچووک" loading="lazy"></div><h4>قاپی میوە </h4><span class="price">٢٥٠٠ د.ع</span></article>
-     
       </div>
     </div>
 
@@ -1090,8 +1082,6 @@ html, body {
           <span class="combo-price">٥,٠٠٠ د.ع</span>
         </div>
       </article>
-
-
 
       <article class="combo-card reveal-up delay-2">
         <div class="combo-img">
@@ -1125,7 +1115,7 @@ html, body {
     <div class="section-head">
       <p class="kicker reveal-up">نوێ · سارد و کرێمی</p>
       <h2 class="section-title reveal-up" style="color: var(--forest);">ICECRAVA</h2>
-      <p class="section-desc reveal-up" style="color: var(--text-muted);">ئایسکریمی تایبەتی کڕاڤە  .</p>
+      <p class="section-desc reveal-up" style="color: var(--text-muted);">ئایسکریمی تایبەتی کڕاڤە .</p>
     </div>
 
     <div class="icecrava-card reveal-up">
@@ -1135,7 +1125,6 @@ html, body {
       <div class="icecrava-text">
         <span class="icecrava-tag">بە تامی جۆرەها میوە</span>
         <h3>ئایس کڕاڤە</h3>
-       
         <span class="price">٢٠٠٠ د.ع</span>
       </div>
     </div>
@@ -1218,8 +1207,6 @@ html, body {
             <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٥٠٠٠ د.ع</span></div>
           </div>
         </article>
-
-        
       </div>
     </div>
   </div>
@@ -1237,9 +1224,8 @@ html, body {
     <ul class="sauce-list">
       <li class="sauce-item reveal-up"><span class="sauce-dot dot-red"></span><span class="sauce-name">کێچەپ</span><span class="price"></span></li>
       <li class="sauce-item reveal-up"><span class="sauce-dot dot-white"></span><span class="sauce-name">مایۆنێز</span><span class="price"> </span></li>
-      <li class="sauce-item reveal-up"><span class="sauce-dot dot-orange"></span><span class="sauce-name">سۆسی پەنیر </span><span class="price"> </span>
-      </ul>
-      </li>
+      <li class="sauce-item reveal-up"><span class="sauce-dot dot-orange"></span><span class="sauce-name">سۆسی پەنیر </span><span class="price"> </span></li>
+    </ul>
   </div>
 </section>
 
@@ -1314,12 +1300,10 @@ html, body {
 
 <!-- ================= FIREBASE & JAVASCRIPT ================= -->
 <script type="module">
-  // هێنانی Firebase لە ڕێگەی CDN
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
   import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-  // زانیارییەکانی پڕۆژەکەت لە فایربەیس
   const firebaseConfig = {
     apiKey: "AIzaSyAamIeVeEDvabLYbmQ9Zbpspyz7TSrx2KI",
     authDomain: "cravakrdmenu.firebaseapp.com",
@@ -1330,14 +1314,11 @@ html, body {
     measurementId: "G-VY0XYQH6V2"
   };
 
-  // کاراکردنی فایربەیس و ئەنەلێتیکس و داتابەیس
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const db = getFirestore(app);
 
-  // کۆدی کارپێکردنی مێنیو، تابس و ئەنیمەیشنەکان
   document.addEventListener('DOMContentLoaded', () => {
-    /* کۆدی شاشەی لۆدینگ (Preloader) */
     const preloader = document.getElementById('preloader');
     setTimeout(() => {
       preloader.classList.add('loaded');
@@ -1370,7 +1351,6 @@ html, body {
       });
     });
 
-    /* کۆدی تابەکانی شەربەت (Tab System) */
     const tabBtns = document.querySelectorAll('.tab-btn');
     const categories = document.querySelectorAll('.juice-category');
 
