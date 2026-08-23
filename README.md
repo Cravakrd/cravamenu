@@ -612,16 +612,28 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   transform:translateX(-6px); background:rgba(255,255,255,.16); border-color:var(--white);
 }
 [dir="rtl"] .fries-card:hover{ transform:translateX(6px); }
-.fc-body{ flex:1; }
-.fc-body h4{ color:var(--white); font-size:17px; margin-bottom:4px; }
-.fc-body p{ color:#A9B2A2; font-size:13.5px; }
+.fc-body{ 
+  flex: 1; 
+  min-width: 0; 
+}
+.fc-body h4{ 
+  color: var(--white); 
+  font-size: 15px; 
+  margin-bottom: 4px; 
+  word-break: break-word; 
+}
+.fc-body p{ 
+  color: #A9B2A2; 
+  font-size: 12px; 
+}
 
 /* Price Sizes for Fries */
 .price-sizes {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  min-width: 90px;
+  min-width: 105px;
+  flex-shrink: 0;
 }
 .size-price {
   background: rgba(0, 0, 0, 0.22);
@@ -850,7 +862,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
   }
 
   .item-photo-fries{ width:52px; height:52px; }
-  .fries-card{ gap:12px; padding:14px 16px; }
+  .fries-card { padding: 12px 10px; gap: 8px; }
+  .size-price { padding: 3px 6px; font-size: 11px; gap: 4px; }
+  .size-price .size-value { font-size: 11px; }
+
   .icecrava-icon{ width:110px; height:110px; }
 }
 
