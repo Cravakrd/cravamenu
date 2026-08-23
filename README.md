@@ -961,7 +961,7 @@ html, body {
     </a>
     <a href="#combos" class="quick-card">
       <div class="quick-card-icon">
-        <img src="combo1jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
+        <img src="combo111jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
       </div>
       <div class="quick-card-info">
           <h4>کڕاڤا کۆمبۆ</h4>
@@ -970,7 +970,7 @@ html, body {
     </a>
     <a href="#icecrava" class="quick-card">
       <div class="quick-card-icon">
-        <img src="ice-icon.jpg" alt="ئایسکراڤا" loading="lazy">
+        <img src="icecr.jpg" alt="ئایسکراڤا" loading="lazy">
       </div>
       <div class="quick-card-info">
         <h4>ئایسکراڤا</h4>
