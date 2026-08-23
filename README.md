@@ -1047,6 +1047,8 @@ html, body {
         <article class="juice-card"><div class="item-photo"><img src="moz.jpg" alt="شیر مۆز" loading="lazy"></div><h4>شیر مۆز</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="gezar.jpg" alt="شەربەتی گێزەر" loading="lazy"></div><h4>شەربەتی گێزەر</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="mango.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی مانگۆ</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+         <article class="juice-card"><div class="item-photo"><img src="figs.jpg" alt="شەربەتی مانگۆ" loading="lazy"></div><h4>شەربەتی هەنجیر</h4><span class="price">٤٠٠٠ د.ع</span></article>
      
       
       </div>
