@@ -942,7 +942,7 @@ html, body {
         <img src="ice-icon.jpg" alt="کڕاڤا کۆمبۆ" loading="lazy">
       </div>
       <div class="quick-card-info">
-         
+          <h4>کڕاڤا کۆمبۆ</h4>
         <p></p>
       </div>
     </a>
