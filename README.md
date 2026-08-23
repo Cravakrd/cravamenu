@@ -1187,7 +1187,7 @@ html, body {
         </article>
 
         <article class="fries-card reveal-up">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-02.jpg" alt=" پەتاتە+پەنیر" loading="lazy"></div>
+          <div class="item-photo item-photo-fries"><img src="crit.jpg" alt=" پەتاتە+پەنیر" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتە+پەنیر</h4>
             <p></p>
@@ -1199,7 +1199,7 @@ html, body {
         </article>
 
         <article class="fries-card reveal-up">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-03.jpg" alt="پەتاتە+کنتاکی" loading="lazy"></div>
+          <div class="item-photo item-photo-fries"><img src="crit.jpg" alt="پەتاتە+کنتاکی" loading="lazy"></div>
           <div class="fc-body">
             <h4> پەتاتە+کنتاکی</h4>
             <p></p>
@@ -1211,10 +1211,10 @@ html, body {
         </article>
 
         <article class="fries-card reveal-up">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-04.jpg" alt="پەتاتەی+کنتاکی+پەنیر" loading="lazy"></div>
+          <div class="item-photo item-photo-fries"><img src="crit.jpg" alt="پەتاتەی+کنتاکی+پەنیر" loading="lazy"></div>
           <div class="fc-body">
-            <h4>پەتاتەی+کنتاکی+پەنیرز</h4>
-            <p>تامێکی کرێمی لەگەڵ بۆنی سیری تازە</p>
+            <h4>پەتاتە+کنتاکی+پەنیرز</h4>
+            <p>ە</p>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٤٠٠٠ د.ع</span></div>
