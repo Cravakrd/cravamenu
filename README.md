@@ -1050,22 +1050,20 @@ html, body {
     <!-- Subsection 3: Milkshakes -->
     <div class="juice-category" id="milkshakes">
       <div class="juice-grid">
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-01.jpg" alt="Banana Shake" loading="lazy"></div><h4>Banana Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-02.jpg" alt="Strawberry Shake" loading="lazy"></div><h4>Strawberry Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-03.jpg" alt="Mango Shake" loading="lazy"></div><h4>Mango Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-04.jpg" alt="Pineapple Shake" loading="lazy"></div><h4>Pineapple Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-05.jpg" alt="Mixed Berry Shake" loading="lazy"></div><h4>Mixed Berry Shake</h4><span class="price">٤٠٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/juice/shake-06.jpg" alt="Kiwi Shake" loading="lazy"></div><h4>Kiwi Shake</h4><span class="price">٣٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="shake1.jpg" alt="مانگۆ" loading="lazy"></div><h4>مانگۆ</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="shake2.jpg" alt=" ئەناناس" loading="lazy"></div><h4>ئەناناس</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="shake3.jpg" alt="مۆز" loading="lazy"></div><h4>مۆز</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="shake4.jpg" alt="بلاکبێری" loading="lazy"></div><h4>بلاکبێری</h4><span class="price">٤٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="shake5.jpg" alt="کاڵەک" loading="lazy"></div><h4>کاڵەک</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="shake6.jpg" alt=" Shake" loading="lazy"></div><h4>خۆخ</h4><span class="price">٤٠٠٠ د.ع</span></article>
       </div>
     </div>
 
     <!-- Subsection 4: Fruit Bowls (قاپی میوە) -->
     <div class="juice-category" id="fruit-bowls">
-      <div class="fruit-bowl-grid">
-        <article class="juice-card"><div class="item-photo"><img src="images/fruit-bowl/bowl-small.jpg" alt="قاپی میوە - بچووک" loading="lazy"></div><h4>قاپی میوە (بچووک)</h4><span class="price">٢٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/fruit-bowl/bowl-med.jpg" alt="قاپی میوە - مامناوەند" loading="lazy"></div><h4>قاپی میوە (مامناوەند)</h4><span class="price">٣٥٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="images/fruit-bowl/bowl-large.jpg" alt="قاپی میوە - گەورە" loading="lazy"></div><h4>قاپی میوە (گەورە)</h4><span class="price">٤٥٠٠ د.ع</span></article>
-        <article class="juice-card featured"><div class="item-photo"><img src="images/fruit-bowl/bowl-special.jpg" alt="قاپی میوەی شاهانەی کڕاڤە" loading="lazy"></div><h4>قاپی میوەی شاهانەی کڕاڤە</h4><span class="price">٥٥٠٠ د.ع</span></article>
+      <div class="bowl">
+        <article class="juice-card"><div class="item-photo"><img src="bowl.jpg" alt="قاپی میوە - بچووک" loading="lazy"></div><h4>قاپی میوە </h4><span class="price">٢٥٠٠ د.ع</span></article>
+     
       </div>
     </div>
 
@@ -1076,7 +1074,7 @@ html, body {
 <section class="combos" id="combos">
   <div class="section-inner">
     <div class="section-head light">
-      <p class="kicker reveal-up">تامی کامڵ · ئۆفەری تایبەت</p>
+      <p class="kicker reveal-up">ئۆفەری تایبەت</p>
       <h2 class="section-title reveal-up">کڕاڤە کۆمبۆ</h2>
       <p class="section-desc reveal-up">تێکەڵەی زێڕینی پەتاتەی گەرم و شەربەتی میوەی فرێش بە نرخی تایبەت.</p>
     </div>
@@ -1084,35 +1082,25 @@ html, body {
     <div class="combo-grid">
       <article class="combo-card reveal-up">
         <div class="combo-img">
-          <img src="combo-01.jpg" alt="کۆمبۆی کلاسیک" loading="lazy">
+          <img src="combo.jpg" alt="کۆمبۆی کلاسیک" loading="lazy">
         </div>
-        <h3>کۆمبۆی کلاسیک</h3>
-        <p>پەتاتەی کلاسیکی گەرم + شەربەتی پرتەقاڵی تازە + ۱ سۆس بەپێی ئارەزوو</p>
+        <h3> پەتاتە +شەربەتی فرێش</h3>
+        <p></p>
         <div class="combo-footer">
-          <span class="combo-price">٤,٠٠٠ د.ع</span>
+          <span class="combo-price">٥,٠٠٠ د.ع</span>
         </div>
       </article>
 
-      <article class="combo-card popular reveal-up delay-1">
-        <span class="combo-badge">پڕفرۆشترین</span>
-        <div class="combo-img">
-          <img src="combo-02.jpg" alt="کۆمبۆی تایبەتی کڕاڤە" loading="lazy">
-        </div>
-        <h3>کۆمبۆی تایبەتی کڕاڤە</h3>
-        <p>پەتاتەی پەنیری گەرم + میکسی گەرمسێری کڕاڤە + ۲ سۆسی تایبەت</p>
-        <div class="combo-footer">
-          <span class="combo-price">٦,٥٠٠ د.ع</span>
-        </div>
-      </article>
+
 
       <article class="combo-card reveal-up delay-2">
         <div class="combo-img">
-          <img src="combo-03.jpg" alt="کۆمبۆی خێزانی" loading="lazy">
+          <img src="combo0.jpg" alt="کۆمبۆی خێزانی" loading="lazy">
         </div>
-        <h3>کۆمبۆی دووانە</h3>
-        <p>۲ پەتاتەی گەورە (تایبەت) + ۲ شەربەتی میکسی میوە + ٣ سۆس</p>
+        <h3>شەربەتی فرێش +میوە </h3>
+        <p></p>
         <div class="combo-footer">
-          <span class="combo-price">١١,٥٠٠ د.ع</span>
+          <span class="combo-price">٥٠٠٠ د.ع</span>
         </div>
       </article>
     </div>
@@ -1137,18 +1125,18 @@ html, body {
     <div class="section-head">
       <p class="kicker reveal-up">نوێ · سارد و کرێمی</p>
       <h2 class="section-title reveal-up" style="color: var(--forest);">ICECRAVA</h2>
-      <p class="section-desc reveal-up" style="color: var(--text-muted);">ئایسکریمی تایبەتی کڕاڤە — یەک تامی نایاب, دروستکراو لە کاوا ستریت.</p>
+      <p class="section-desc reveal-up" style="color: var(--text-muted);">ئایسکریمی تایبەتی کڕاڤە  .</p>
     </div>
 
     <div class="icecrava-card reveal-up">
       <div class="icecrava-icon">
-        <img src="icecrava.jpg" alt="ئایسکڕیمی کڕاڤە" loading="lazy">
+        <img src="icecr.jpg" alt="ئایسکڕیمی کڕاڤە" loading="lazy">
       </div>
       <div class="icecrava-text">
-        <span class="icecrava-tag">تاکە تام</span>
-        <h3>ئایسکڕیمی کڕاڤە</h3>
-        <p>کرێمی سارد و نەرم, تێکەڵ لەگەڵ تامی میوەی تازە و تامی تایبەتی کڕاڤە. کۆتایی خۆشی ژەمەکەت.</p>
-        <span class="price">٣٥٠٠ د.ع</span>
+        <span class="icecrava-tag">بە تامی جۆرەها میوە</span>
+        <h3>ئایس کڕاڤە</h3>
+       
+        <span class="price">٢٠٠٠ د.ع</span>
       </div>
     </div>
   </div>
@@ -1172,14 +1160,14 @@ html, body {
 
   <div class="section-inner">
     <div class="section-head">
-      <p class="kicker reveal-up">ترسکە · گەرم · تازە سرخکراو</p>
+      <p class="kicker reveal-up"></p>
       <h2 class="section-title reveal-up">پەتاتەی کڕاڤە</h2>
-      <p class="section-desc reveal-up">٥ جۆری تایبەت, هەموویان تازە دەسرخرێن دوای داواکردن، بە دوو قەبارەی جیاواز.</p>
+      <p class="section-desc reveal-up"> هەموویان تازە دەسرخرێن دوای داواکردن، بە دوو قەبارەی جیاواز.</p>
     </div>
 
     <div class="fries-layout">
       <div class="fries-feature-img reveal-left">
-        <img src="crbox.jpg" alt="پەتاتەی ترسکەی کڕاڤە" loading="lazy">
+        <img src="crbox.jpg" alt="سادە" loading="lazy">
       </div>
 
       <div class="fries-cards">
@@ -1187,7 +1175,7 @@ html, body {
           <div class="item-photo item-photo-fries"><img src="images/fries/fries-01.jpg" alt="پەتاتەی کلاسیک" loading="lazy"></div>
           <div class="fc-body">
             <h4>پەتاتەی کلاسیک</h4>
-            <p>پەتاتەی ترسکەی سادە لەگەڵ خوێی تایبەت</p>
+            <p></p>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
@@ -1196,52 +1184,42 @@ html, body {
         </article>
 
         <article class="fries-card reveal-up">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-02.jpg" alt="پەتاتەی پەنیر" loading="lazy"></div>
+          <div class="item-photo item-photo-fries"><img src="images/fries/fries-02.jpg" alt=" پەتاتە+پەنیر" loading="lazy"></div>
           <div class="fc-body">
-            <h4>پەتاتەی پەنیر</h4>
-            <p>داپۆشراو بە سۆسی پەنیری گەرم</p>
+            <h4>پەتاتە+پەنیر</h4>
+            <p></p>
           </div>
           <div class="price-sizes">
-            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
-            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
-          </div>
-        </article>
-
-        <article class="fries-card reveal-up">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-03.jpg" alt="پەتاتەی تیخ" loading="lazy"></div>
-          <div class="fc-body">
-            <h4>پەتاتەی تیخ</h4>
-            <p>بەهاراتی تیژ بۆ ئەوانەی حەز لە تام دەکەن</p>
-          </div>
-          <div class="price-sizes">
-            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
-            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
-          </div>
-        </article>
-
-        <article class="fries-card reveal-up">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-04.jpg" alt="پەتاتەی سیر و مایۆنێز" loading="lazy"></div>
-          <div class="fc-body">
-            <h4>پەتاتەی سیر و مایۆنێز</h4>
-            <p>تامێکی کرێمی لەگەڵ بۆنی سیری تازە</p>
-          </div>
-          <div class="price-sizes">
-            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
-            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
-          </div>
-        </article>
-
-        <article class="fries-card reveal-up featured">
-          <div class="item-photo item-photo-fries"><img src="images/fries/fries-05.jpg" alt="پەتاتەی تایبەتی کڕاڤە" loading="lazy"></div>
-          <div class="fc-body">
-            <h4>پەتاتەی تایبەتی کڕاڤە</h4>
-            <p>تێکەڵەی هەموو سۆسەکان + پارچە گۆشتی تایبەت</p>
-          </div>
-          <div class="price-sizes">
-            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٥٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٣٥٠٠ د.ع</span></div>
             <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٥٠٠ د.ع</span></div>
           </div>
         </article>
+
+        <article class="fries-card reveal-up">
+          <div class="item-photo item-photo-fries"><img src="images/fries/fries-03.jpg" alt="پەتاتە+کنتاکی" loading="lazy"></div>
+          <div class="fc-body">
+            <h4> پەتاتە+کنتاکی</h4>
+            <p></p>
+          </div>
+          <div class="price-sizes">
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٣٥٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٥٠٠ د.ع</span></div>
+          </div>
+        </article>
+
+        <article class="fries-card reveal-up">
+          <div class="item-photo item-photo-fries"><img src="images/fries/fries-04.jpg" alt="پەتاتەی+کنتاکی+پەنیر" loading="lazy"></div>
+          <div class="fc-body">
+            <h4>پەتاتەی+کنتاکی+پەنیرز</h4>
+            <p>تامێکی کرێمی لەگەڵ بۆنی سیری تازە</p>
+          </div>
+          <div class="price-sizes">
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٤٠٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٥٠٠٠ د.ع</span></div>
+          </div>
+        </article>
+
+        
       </div>
     </div>
   </div>
@@ -1251,18 +1229,15 @@ html, body {
 <section class="sauces" id="sauces">
   <div class="section-inner">
     <div class="section-head light">
-      <p class="kicker reveal-up">تاماوییەکان</p>
+      <p class="kicker reveal-up"></p>
       <h2 class="section-title reveal-up">سۆسەکان</h2>
-      <p class="section-desc reveal-up">هەر سۆسێک بە تامێکی جیاواز, هاوڕێی چاکی پەتاتەکەت.</p>
+      <p class="section-desc reveal-up">.</p>
     </div>
 
     <ul class="sauce-list">
-      <li class="sauce-item reveal-up"><span class="sauce-dot dot-red"></span><span class="sauce-name">کێچەپ</span><span class="price">٥٠٠ د.ع</span></li>
-      <li class="sauce-item reveal-up"><span class="sauce-dot dot-white"></span><span class="sauce-name">مایۆنێز</span><span class="price">٥٠٠ د.ع</span></li>
-      <li class="sauce-item reveal-up"><span class="sauce-dot dot-orange"></span><span class="sauce-name">سۆسی تایبەتی کڕاڤە</span><span class="price">٧٥٠ د.ع</span></li>
-      <li class="sauce-item reveal-up"><span class="sauce-dot dot-hot"></span><span class="sauce-name">سۆسی تیخ</span><span class="price">٥٠٠ د.ع</span></li>
-      <li class="sauce-item reveal-up"><span class="sauce-dot dot-cream"></span><span class="sauce-name">سۆسی سیر</span><span class="price">٥٠٠ د.ع</span></li>
-    </ul>
+      <li class="sauce-item reveal-up"><span class="sauce-dot dot-red"></span><span class="sauce-name">کێچەپ</span><span class="price"></span></li>
+      <li class="sauce-item reveal-up"><span class="sauce-dot dot-white"></span><span class="sauce-name">مایۆنێز</span><span class="price"> </span></li>
+      <li class="sauce-item reveal-up"><span class="sauce-dot dot-orange"></span><span class="sauce-name">سۆسی پەنیر </span><span class="price"> </span></li>
   </div>
 </section>
 
