@@ -1088,7 +1088,7 @@ html, body {
     <div class="combo-grid">
       <article class="combo-card reveal-up">
         <div class="combo-img">
-          <img src="combo.jpg" alt="کۆمبۆی کلاسیک" loading="lazy">
+          <img src="combo1.jpg" alt="کۆمبۆی کلاسیک" loading="lazy">
         </div>
         <h3> پەتاتە +شەربەتی فرێش</h3>
         <p></p>
