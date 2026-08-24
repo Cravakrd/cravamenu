@@ -1165,7 +1165,7 @@ html, body {
     <div class="section-head">
       <p class="kicker reveal-up"></p>
       <h2 class="section-title reveal-up">پەتاتەی کڕاڤە</h2>
-      <p class="section-desc reveal-up"> هەموویان تازە دەسرخرێن دوای داواکردن، بە دوو قەبارەی جیاواز.</p>
+      <p class="section-desc reveal-up"> هەموویان بە تازەیی ئامادە دەکرێن دوای داواکردن، بە دوو قەبارەی جیاواز.</p>
     </div>
 
     <div class="fries-layout">
@@ -1181,7 +1181,7 @@ html, body {
             <p></p>
           </div>
           <div class="price-sizes">
-            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٢٠٠٠ د.ع</span></div>
+            <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٣٠٠٠ د.ع</span></div>
             <div class="size-price"><span class="size-label">گەورە</span><span class="size-value">٤٠٠٠ د.ع</span></div>
           </div>
         </article>
@@ -1280,7 +1280,7 @@ html, body {
     <div class="footer-col">
       <h5>کراوەیە لە</h5>
       <p></p>
-      <p>٤:٠٠ دوای نیوەڕۆ تاوەکو ١٢:٠٠ شەو</p>
+      <p>٥:٠٠ دوای نیوەڕۆ تاوەکو ١:٠٠ شەو</p>
     </div>
 
     <div class="footer-col">
