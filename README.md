@@ -1213,8 +1213,8 @@ html, body {
         <article class="fries-card reveal-up">
           <div class="item-photo item-photo-fries"><img src="crit.jpg" alt="پەتاتەی+کنتاکی+پەنیر" loading="lazy"></div>
           <div class="fc-body">
-            <h4>پەتاتە+کنتاکی+پەنیرز</h4>
-            <p>ە</p>
+            <h4>پەتاتە+کنتاکی+پەنیر</h4>
+            <p></p>
           </div>
           <div class="price-sizes">
             <div class="size-price"><span class="size-label">بچووک</span><span class="size-value">٤٠٠٠ د.ع</span></div>
