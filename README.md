@@ -1025,7 +1025,7 @@ html, body {
         <article class="juice-card"><div class="item-photo"><img src="fresh.jpg" alt="میکسی ئەنتیۆکسیدانت" loading="lazy"></div><h4>فرێش کڕاڤا</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="matrix.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>کڕاڤا ماتریکس</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="dream.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>کڕاڤا دریم</h4><span class="price">٣٠٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="dream.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>کڕاڤا ئەکتیڤ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="acctive.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>کڕاڤا ئەکتیڤ</h4><span class="price">٣٠٠٠ د.ع</span></article>
   
         <article class="juice-card featured"><div class="item-photo"><img src="cravamix.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>کڕاڤا میکس</h4><span class="price">٤٠٠٠ د.ع</span></article>
       </div>
