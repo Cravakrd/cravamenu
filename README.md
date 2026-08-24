@@ -1069,7 +1069,7 @@ html, body {
     <!-- Subsection 4: Fruit Bowls (قاپی میوە) -->
     <div class="juice-category" id="fruit-bowls">
       <div class="bowl">
-        <article class="juice-card"><div class="item-photo"><img src="bowl.jpg" alt="قاپی میوە - بچووک" loading="lazy"></div><h4>قاپی میوە </h4><span class="price">٢٥٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="qap.jpg" alt="قاپی میوە  " loading="lazy"></div><h4>قاپی میوە </h4><span class="price">٣٠٠٠ د.ع</span></article>
       </div>
     </div>
 
