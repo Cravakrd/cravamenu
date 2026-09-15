@@ -1026,6 +1026,9 @@ html, body {
         <article class="juice-card"><div class="item-photo"><img src="matrix.jpg" alt="میکسی لیمۆ و تووی فەرەنگی" loading="lazy"></div><h4>کڕاڤا ماتریکس</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="dream.jpg" alt="میکسی مانگۆ و پرتەقاڵ" loading="lazy"></div><h4>کڕاڤا دریم</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="acctive.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>کڕاڤا ئەکتیڤ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+
+        <article class="juice-card"><div class="item-photo"><img src="oscar.jpg" alt="میکسی سێو و کیوی" loading="lazy"></div><h4>کڕاڤا ئۆسکار</h4><span class="price">٣٠٠٠ د.ع</span></article>
+  
   
         <article class="juice-card featured"><div class="item-photo"><img src="cravamix.jpg" alt="میکسی تایبەتی کڕاڤە" loading="lazy"></div><h4>کڕاڤا میکس</h4><span class="price">٤٠٠٠ د.ع</span></article>
       </div>
@@ -1063,6 +1066,14 @@ html, body {
         <article class="juice-card"><div class="item-photo"><img src="shake4.jpg" alt="بلاکبێری" loading="lazy"></div><h4>بلاکبێری</h4><span class="price">٤٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="shake5.jpg" alt="کاڵەک" loading="lazy"></div><h4>کاڵەک</h4><span class="price">٤٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="shake6.jpg" alt=" Shake" loading="lazy"></div><h4>خۆخ</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+         <article class="juice-card"><div class="item-photo"><img src="shake7.jpg" alt=" Shake" loading="lazy"></div><h4>شلک</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+          <article class="juice-card"><div class="item-photo"><img src="shake8.jpg" alt=" Shake" loading="lazy"></div><h4>نۆتێلا</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+
+ <article class="juice-card"><div class="item-photo"><img src="shake9.jpg" alt=" Shake" loading="lazy"></div><h4>لوتۆز</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
       </div>
     </div>
 
@@ -1093,11 +1104,12 @@ html, body {
         <h3> پەتاتە +شەربەتی فرێش</h3>
         <p></p>
         <div class="combo-footer">
-          <span class="combo1-price">٥,٠٠٠ د.ع</span>
+          <span class="combo-price">٥,٠٠٠ د.ع</span>
+          <span class="combo-price">,+کنتاکی٦٠٠٠ د.ع</span>
         </div>
       </article>
 
-      <article class="combo22-card reveal-up delay-2">
+      <article class="combo-card reveal-up">
         <div class="combo-img">
           <img src="combo22.jpg" alt="کۆمبۆی خێزانی" loading="lazy">
         </div>
