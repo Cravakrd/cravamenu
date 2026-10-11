@@ -1251,6 +1251,11 @@ html, body {
       <li class="sauce-item reveal-up"><span class="sauce-dot dot-red"></span><span class="sauce-name">کێچەپ</span><span class="price"></span></li>
       <li class="sauce-item reveal-up"><span class="sauce-dot dot-white"></span><span class="sauce-name">مایۆنێز</span><span class="price"> </span></li>
       <li class="sauce-item reveal-up"><span class="sauce-dot dot-orange"></span><span class="sauce-name">سۆسی پەنیر </span><span class="price"> </span></li>
+
+      
+      <li class="sauce-item reveal-up"><span class="sauce-dot dot-red"></span><span class="sauce-name">  سپایسی  </span><span class="price"></span></li>
+
+       <li class="sauce-item reveal-up"><span class="sauce-dot dot-orange"></span><span class="sauce-name">هەنی مەستەرد </span><span class="price"> </span></li>
     </ul>
   </div>
 </section>
