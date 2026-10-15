@@ -1,4 +1,3 @@
-
 <html lang="ckb" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -248,10 +247,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .quick-nav-cards {
   position: relative;
   z-index: 2;
-  max-width: 1000px;
+  max-width: 1180px;
   margin: 20px auto 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 14px;
   padding: 0 16px;
 }
@@ -688,6 +687,12 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 .sauce-name{ color:var(--white); font-weight:600; font-size:14.5px; }
 .sauce-item .price{ color:var(--gold-light); font-size:13px; font-weight:700; }
 
+/* Sweets */
+.sweets{ background:var(--forest-dark); position:relative; }
+.sweets-grid{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
+}
+
 /* Takeaway strip */
 .takeaway-strip{
   background: linear-gradient(90deg,var(--gold-deep),var(--gold));
@@ -788,8 +793,10 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
 /* Responsive */
 @media (max-width: 980px){
   .quick-nav-cards { grid-template-columns: repeat(2, 1fr); }
+  .quick-nav-cards .quick-card:last-child:nth-child(odd){ grid-column: 1 / -1; }
   .juice-grid{ grid-template-columns:repeat(3,1fr); }
   .fruit-bowl-grid{ grid-template-columns:repeat(2,1fr); }
+  .sweets-grid{ grid-template-columns:repeat(2,1fr); }
   .combo-grid{ grid-template-columns: 1fr; }
   .sauce-list{ grid-template-columns:repeat(3,1fr); }
   .footer-inner{ grid-template-columns:1fr 1fr; }
@@ -849,6 +856,7 @@ h1,h2,h3,h4,h5{ font-family: var(--font-display); line-height:1.25; }
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 8px;
   }
+  .sweets-grid{ gap:10px; }
   .juice-card {
     padding: 12px 6px;
   }
@@ -908,6 +916,7 @@ html, body {
       <a href="#icecrava">ئایسکراڤا</a>
       <a href="#fries">پەتاتە</a>
       <a href="#sauces">سۆسەکان</a>
+      <a href="#sweets">شیرینی</a>
       <a href="#footer">پەیوەندی</a>
     </nav>
 
@@ -983,6 +992,15 @@ html, body {
       </div>
       <div class="quick-card-info">
         <h4>پەتاتەی گەرم</h4>
+        <p></p>
+      </div>
+    </a>
+    <a href="#sweets" class="quick-card">
+      <div class="quick-card-icon">
+        <img src="shrin.jpg" alt="شیرینی" loading="lazy">
+      </div>
+      <div class="quick-card-info">
+        <h4>شیرینی</h4>
         <p></p>
       </div>
     </a>
@@ -1257,6 +1275,39 @@ html, body {
 
        <li class="sauce-item reveal-up"><span class="sauce-dot dot-orange"></span><span class="sauce-name">هەنی مەستەرد </span><span class="price"> </span></li>
     </ul>
+  </div>
+</section>
+
+<!-- ================= SWEETS ================= -->
+<section class="sweets" id="sweets">
+  <div class="section-inner">
+    <div class="section-head light">
+      <p class="kicker reveal-up">تامی خۆش</p>
+      <h2 class="section-title reveal-up">شیرینی</h2>
+      <p class="section-desc reveal-up"></p>
+    </div>
+
+    <div class="sweets-grid">
+      <article class="juice-card"><div class="item-photo"><img src="cc.jpg" alt="کێیک" loading="lazy"></div><h4>کریپ کلاسیک</h4><span class="price">٣٠٠٠ د.ع</span></article>
+      <article class="juice-card"><div class="item-photo"><img src="cf.jpg" alt="دۆناتس" loading="lazy"></div><h4>کریپ فستق</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="crf.jpg" alt="کێیک" loading="lazy"></div><h4>کریپ ڕۆل</h4><span class="price">٣٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="cr.jpg" alt="دۆناتس" loading="lazy"></div><h4>کریپ ڕۆڵ فستق</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+
+
+<article class="juice-card"><div class="item-photo"><img src="mr.jpg" alt="دۆناتس" loading="lazy"></div><h4>مانگۆ ڕۆڵ</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+
+<article class="juice-card"><div class="item-photo"><img src="sr.jpg" alt="دۆناتس" loading="lazy"></div><h4>شلک ڕۆڵ</h4><span class="price">٣٠٠٠ د.ع</span></article>
+
+
+<article class="juice-card"><div class="item-photo"><img src="spg.jpg" alt="دۆناتس" loading="lazy"></div><h4> کریپ سپاگێتی</h4><span class="price">٤٠٠٠ د.ع</span></article>
+
+
+    
+
+
+    </div>
   </div>
 </section>
 
