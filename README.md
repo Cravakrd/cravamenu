@@ -1056,7 +1056,7 @@ html, body {
     <div class="juice-category" id="pure-juices">
       <div class="juice-grid">
         <article class="juice-card"><div class="item-photo"><img src="orange.jpg" alt="شەربەتی پرتەقاڵ" loading="lazy"></div><h4>شەربەتی پرتەقاڵ</h4><span class="price">٣٠٠٠ د.ع</span></article>
-        <article class="juice-card"><div class="item-photo"><img src="hanar.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٤٠٠٠ د.ع</span></article>
+        <article class="juice-card"><div class="item-photo"><img src="hanar.jpg" alt="شەربەتی هەنار" loading="lazy"></div><h4>شەربەتی هەنار</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="lemo.jpg" alt="شەربەتی لیمۆ و نەعنا" loading="lazy"></div><h4>شەربەتی لیمۆ و نەعنا</h4><span class="price">٣٥٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="sew.jpg" alt="شەربەتی سێو" loading="lazy"></div><h4>شەربەتی سێو</h4><span class="price">٣٠٠٠ د.ع</span></article>
         <article class="juice-card"><div class="item-photo"><img src="wmelon.jpg" alt="شەربەتی شوتی" loading="lazy"></div><h4>شەربەتی شوتی</h4><span class="price">٣٠٠٠ د.ع</span></article>
